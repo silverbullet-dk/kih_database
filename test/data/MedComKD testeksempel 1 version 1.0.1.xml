@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SelfMonitoredSampleCollection>
+    <SelfMonitoredSample>
+        <LaboratoryReportExtendedCollection>
+            <LaboratoryReportExtended>
+                <UuidIdentifier>b33be781-bf97-11e1-afa7-0800200c9a66</UuidIdentifier>
+                <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+                <AnalysisText>FEV1</AnalysisText>
+                <ResultText>3.2</ResultText>
+                <ResultEncodingIdentifier>numeric</ResultEncodingIdentifier>
+                <ResultOperatorIdentifier>less_than</ResultOperatorIdentifier>
+                <ResultUnitText>Liter</ResultUnitText>
+                <ResultAbnormalIdentifier>to_high</ResultAbnormalIdentifier>
+                <ResultMinimumText>1</ResultMinimumText>
+                <ResultMaximumText>3</ResultMaximumText>
+                <ResultTypeOfInterval>therapeutic</ResultTypeOfInterval>
+                <NationalSampleIdentifier>9999999999</NationalSampleIdentifier>
+                <IupacIdentifier>MCS88015</IupacIdentifier>
+                <ProducerOfLabResult>
+                    <Identifier>Patient målt</Identifier>
+                    <IdentifierCode>PST</IdentifierCode>
+                </ProducerOfLabResult>
+                <Instrument>
+                    <MedComID>EPQ1225</MedComID>
+                    <Manufacturer>AD Medical</Manufacturer>
+                    <ProductType>Multifunction Kit</ProductType>
+                    <Model> UA-767PTB-C </Model>
+                    <SoftwareVersion>10.0.3452r45</SoftwareVersion>
+                </Instrument>
+                <MeasurementTransferredBy>automatic</MeasurementTransferredBy>
+                <MeasurementLocation>home</MeasurementLocation>
+                <MeasuringDataClassification>clinical</MeasuringDataClassification>
+                <MeasurementDuration>120 sek</MeasurementDuration>
+                <MeasurementScheduled>scheduled</MeasurementScheduled>
+                <HealthCareProfessionalComment>Pt. havde meget svært ved at puste igennem idag</HealthCareProfessionalComment>
+                <MeasuringCircumstances>Udblæsningen blev foretaget siddende på en stol lige efter morgenmaden</MeasuringCircumstances>
+            </LaboratoryReportExtended>
+            <LaboratoryReportExtended>
+                <UuidIdentifier>b33be782-bf97-11e1-afa7-0800200c9a66</UuidIdentifier>
+                <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+                <AnalysisText>FVC</AnalysisText>
+                <ResultText>3.7</ResultText>
+                <ResultEncodingIdentifier>numeric</ResultEncodingIdentifier>
+                <ResultOperatorIdentifier>less_than</ResultOperatorIdentifier>
+                <ResultUnitText>Liter</ResultUnitText>
+                <ResultAbnormalIdentifier>unspecified</ResultAbnormalIdentifier>
+                <ResultMinimumText>unspecified</ResultMinimumText>
+                <ResultMaximumText>unspecified</ResultMaximumText>
+                <ResultTypeOfInterval>therapeutic</ResultTypeOfInterval>
+                <NationalSampleIdentifier>999999991</NationalSampleIdentifier>
+                <IupacIdentifier>MCS88016</IupacIdentifier>
+                <ProducerOfLabResult>
+                    <Identifier>Patient målt</Identifier>
+                    <IdentifierCode>PST</IdentifierCode>
+                </ProducerOfLabResult>
+                <Instrument>
+                    <MedComID>EPQ1225</MedComID>
+                    <Manufacturer>AD Medical</Manufacturer>
+                    <ProductType>Multifunction Kit</ProductType>
+                    <Model> UA-767PTB-C </Model>
+                    <SoftwareVersion>10.0.3452r45</SoftwareVersion>
+                </Instrument>
+                <MeasurementTransferredBy>automatic </MeasurementTransferredBy>
+                <MeasurementLocation>home</MeasurementLocation>
+                <MeasuringDataClassification>clinical</MeasuringDataClassification>
+                <MeasurementDuration>120 sek</MeasurementDuration>
+                <MeasurementScheduled>scheduled</MeasurementScheduled>
+                <HealthCareProfessionalComment>Pt. havde meget svært ved at puste igennem idag</HealthCareProfessionalComment>
+                <MeasuringCircumstances>Udblæsningen blev foretaget siddende på en stol lige efter morgenmaden</MeasuringCircumstances>
+            </LaboratoryReportExtended>
+            <LaboratoryReportExtended>
+                <UuidIdentifier>b33be783-bf97-11e1-afa7-0800200c9a66</UuidIdentifier>
+                <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+                <AnalysisText>FEV1/FVC</AnalysisText>
+                <ResultText>85</ResultText>
+                <ResultEncodingIdentifier>numeric</ResultEncodingIdentifier>
+                <ResultUnitText>%</ResultUnitText>
+                <ResultAbnormalIdentifier>unspecified</ResultAbnormalIdentifier>
+                <ResultMinimumText>unspecified</ResultMinimumText>
+                <ResultMaximumText>unspecified</ResultMaximumText>
+                <ResultTypeOfInterval>therapeutic</ResultTypeOfInterval>
+                <NationalSampleIdentifier>999999992</NationalSampleIdentifier>
+                <IupacIdentifier>MCS88017</IupacIdentifier>
+                <ProducerOfLabResult>
+                    <Identifier>Patient målt</Identifier>
+                    <IdentifierCode>PST</IdentifierCode>
+                </ProducerOfLabResult>
+                <Instrument>
+                    <MedComID>EPQ1225</MedComID>
+                    <Manufacturer>AD Medical</Manufacturer>
+                    <ProductType>Multifunction Kit</ProductType>
+                    <Model> UA-767PTB-C </Model>
+                    <SoftwareVersion>10.0.3452r45</SoftwareVersion>
+                </Instrument>
+                <MeasurementTransferredBy>automatic</MeasurementTransferredBy>
+                <MeasurementLocation>home</MeasurementLocation>
+                <MeasuringDataClassification>clinical</MeasuringDataClassification>
+                <MeasurementDuration>120 sek</MeasurementDuration>
+                <MeasurementScheduled>scheduled</MeasurementScheduled>
+                <HealthCareProfessionalComment>Pt. havde meget svært ved at puste igennem idag</HealthCareProfessionalComment>
+                <MeasuringCircumstances>Udblæsningen blev foretaget siddende på en stol lige efter morgenmaden</MeasuringCircumstances>
+            </LaboratoryReportExtended>
+            <LaboratoryReportExtended>
+                <UuidIdentifier>b33be784-bf97-11e1-afa7-0800200c9a66</UuidIdentifier>
+                <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+                <AnalysisText>FEV i prc.</AnalysisText>
+                <ResultText>78</ResultText>
+                <ResultEncodingIdentifier>numeric</ResultEncodingIdentifier>
+                <ResultUnitText>%</ResultUnitText>
+                <ResultAbnormalIdentifier>unspecified</ResultAbnormalIdentifier>
+                <ResultMinimumText>unspecified</ResultMinimumText>
+                <ResultMaximumText>unspecified</ResultMaximumText>
+                <ResultTypeOfInterval>therapeutic</ResultTypeOfInterval>
+                <NationalSampleIdentifier>999999993</NationalSampleIdentifier>
+                <IupacIdentifier>MCS88023</IupacIdentifier>
+                <ProducerOfLabResult>
+                    <Identifier>Patient målt</Identifier>
+                    <IdentifierCode>PST</IdentifierCode>
+                </ProducerOfLabResult>
+                <Instrument>
+                    <MedComID>EPQ1225</MedComID>
+                    <Manufacturer>AD Medical</Manufacturer>
+                    <ProductType>Multifunction Kit</ProductType>
+                    <Model> UA-767PTB-C </Model>
+                    <SoftwareVersion>10.0.3452r45</SoftwareVersion>
+                </Instrument>
+                <MeasurementTransferredBy>automatic</MeasurementTransferredBy>
+                <MeasurementLocation>home</MeasurementLocation>
+                <MeasuringDataClassification>clinical</MeasuringDataClassification>
+                <MeasurementDuration>120 sek</MeasurementDuration>
+                <MeasurementScheduled>scheduled</MeasurementScheduled>
+                <HealthCareProfessionalComment>Pt. havde meget svært ved at puste igennem idag</HealthCareProfessionalComment>
+                <MeasuringCircumstances>Udblæsningen blev foretaget siddende på en stol lige efter morgenmaden</MeasuringCircumstances>
+            </LaboratoryReportExtended>
+        </LaboratoryReportExtendedCollection>
+        <CreatedByText>Helbredsprofilen</CreatedByText>
+    </SelfMonitoredSample>
+    <SelfMonitoredSample>
+        <LaboratoryReportExtendedCollection>
+            <LaboratoryReportExtended>
+                <UuidIdentifier>b33be788-bf97-11e1-afa7-0800200c9a66</UuidIdentifier>
+                <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+                <AnalysisText>MRC</AnalysisText>
+                <ResultText>3</ResultText>
+                <ResultEncodingIdentifier>numeric</ResultEncodingIdentifier>
+                <ResultUnitText>1 til 5</ResultUnitText>
+                <ResultAbnormalIdentifier>unspecified</ResultAbnormalIdentifier>
+                <ResultMinimumText>1</ResultMinimumText>
+                <ResultMaximumText>5</ResultMaximumText>
+                <NationalSampleIdentifier>9999999994</NationalSampleIdentifier>
+                <IupacIdentifier>MCS88021</IupacIdentifier>
+                <ProducerOfLabResult>
+                    <Identifier>Laegehuset, Birte Hvam</Identifier>
+                    <IdentifierCode>PNT</IdentifierCode>
+                </ProducerOfLabResult>
+                <Instrument>
+                    <MedComID>EPQ1225</MedComID>
+                    <Manufacturer>AD Medical</Manufacturer>
+                    <ProductType>Multifunction Kit</ProductType>
+                    <Model> UA-767PTB-C </Model>
+                    <SoftwareVersion>10.0.3452r45</SoftwareVersion>
+                </Instrument>
+                <MeasurementTransferredBy>automatic</MeasurementTransferredBy>
+                <MeasurementLocation>home</MeasurementLocation>
+                <MeasuringDataClassification>clinical</MeasuringDataClassification>
+                <MeasurementDuration>120 sek</MeasurementDuration>
+                <MeasurementScheduled>scheduled</MeasurementScheduled>
+                <HealthCareProfessionalComment>Pt. havde meget svært ved at puste igennem idag</HealthCareProfessionalComment>
+                <MeasuringCircumstances>Udblæsningen blev foretaget siddende på en stol lige efter morgenmaden</MeasuringCircumstances>
+            </LaboratoryReportExtended>
+        </LaboratoryReportExtendedCollection>
+        <CreatedByText>Laegehuset, Birthe Hvam</CreatedByText>
+    </SelfMonitoredSample>
+    <SelfMonitoredSample>
+        <UuidIdentifier>b33be785-bf97-11e1-afa7-0800200c9a66</UuidIdentifier>
+        <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+        <SampleCategoryIdentifier>NYHA</SampleCategoryIdentifier>
+        <LaboratoryReportExtendedCollection>
+            <LaboratoryReportExtended>
+                <UuidIdentifier>b33be786-bf97-11e1-afa7-0800200c9a66</UuidIdentifier>
+                <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+                <AnalysisText>NYHA</AnalysisText>
+                <ResultText>4</ResultText>
+                <ResultEncodingIdentifier>numeric</ResultEncodingIdentifier>
+                <ResultOperatorIdentifier>greater_than</ResultOperatorIdentifier>
+                <ResultUnitText>1 til 4</ResultUnitText>
+                <ResultAbnormalIdentifier>to_high</ResultAbnormalIdentifier>
+                <ResultMinimumText>1</ResultMinimumText>
+                <ResultMaximumText>4</ResultMaximumText>
+                <NationalSampleIdentifier>9999999995</NationalSampleIdentifier>
+                <IupacIdentifier>MCS88032</IupacIdentifier>
+                <ProducerOfLabResult>
+                    <Identifier>Laegehuset, Birte Hvam</Identifier>
+                    <IdentifierCode>PNT</IdentifierCode>
+                </ProducerOfLabResult>
+                <Instrument>
+                    <MedComID>EPQ1225</MedComID>
+                    <Manufacturer>AD Medical</Manufacturer>
+                    <ProductType>Multifunction Kit</ProductType>
+                    <Model> UA-767PTB-C </Model>
+                    <SoftwareVersion>10.0.3452r45</SoftwareVersion>
+                </Instrument>
+                <MeasurementTransferredBy>automatic</MeasurementTransferredBy>
+                <MeasurementLocation>home</MeasurementLocation>
+                <MeasuringDataClassification>clinical</MeasuringDataClassification>
+                <MeasurementDuration>120 sek</MeasurementDuration>
+                <MeasurementScheduled>scheduled</MeasurementScheduled>
+                <HealthCareProfessionalComment>Pt. havde meget svært ved at puste igennem idag</HealthCareProfessionalComment>
+                <MeasuringCircumstances>Udblæsningen blev foretaget siddende på en stol lige efter morgenmaden</MeasuringCircumstances>
+
+            </LaboratoryReportExtended>
+        </LaboratoryReportExtendedCollection>
+        <CreatedByText>Laegehuset, Birthe Hvam</CreatedByText>
+    </SelfMonitoredSample>
+    <SelfMonitoredSample>
+        <UuidIdentifier>b33be789-bf97-11e1-afa7-0800200c9a66</UuidIdentifier>
+        <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+        <SampleCategoryIdentifier>Iltmætning</SampleCategoryIdentifier>
+        <LaboratoryReportExtendedCollection>
+            <LaboratoryReportExtended>
+                <UuidIdentifier>b33be78a-bf97-11e1-afa7-0800200c9a66</UuidIdentifier>
+                <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+                <AnalysisText>O2 sat.;Hb(aB)</AnalysisText>
+                <ResultText>95.3</ResultText>
+                <ResultEncodingIdentifier>numeric</ResultEncodingIdentifier>
+                <ResultUnitText>%</ResultUnitText>
+                <NationalSampleIdentifier>9999999996</NationalSampleIdentifier>
+                <IupacIdentifier>NPU03011</IupacIdentifier>
+                <ProducerOfLabResult>
+                    <Identifier>Laegehuset, Birte Hvam</Identifier>
+                    <IdentifierCode>PNT</IdentifierCode>
+                </ProducerOfLabResult>
+                <Instrument>
+                    <MedComID>EPQ1225</MedComID>
+                    <Manufacturer>AD Medical</Manufacturer>
+                    <ProductType>Multifunction Kit</ProductType>
+                    <Model> UA-767PTB-C </Model>
+                    <SoftwareVersion>10.0.3452r45</SoftwareVersion>
+                </Instrument>
+                <MeasurementTransferredBy>automatic</MeasurementTransferredBy>
+                <MeasurementLocation>home</MeasurementLocation>
+                <MeasuringDataClassification>clinical</MeasuringDataClassification>
+                <MeasurementDuration>120 sek</MeasurementDuration>
+                <MeasurementScheduled>scheduled</MeasurementScheduled>
+                <HealthCareProfessionalComment>Pt. havde meget svært ved at puste igennem idag</HealthCareProfessionalComment>
+                <MeasuringCircumstances>Udblæsningen blev foretaget siddende på en stol lige efter morgenmaden</MeasuringCircumstances>
+
+            </LaboratoryReportExtended>
+        </LaboratoryReportExtendedCollection>
+        <CreatedByText>Laegehuset, Birthe Hvam</CreatedByText>
+    </SelfMonitoredSample>
+    <SelfMonitoredSample>
+        <UuidIdentifier>b33be78b-bf97-11e1-afa7-0800200c9a66</UuidIdentifier>
+        <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+        <SampleCategoryIdentifier>Exacerbationer</SampleCategoryIdentifier>
+        <LaboratoryReportExtendedCollection>
+            <LaboratoryReportExtended>
+                <UuidIdentifier>b33be78c-bf97-11e1-afa7-0800200c9a66</UuidIdentifier>
+                <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+                <AnalysisText>KOL-Ant.eksacerbationer sidste år?</AnalysisText>
+                <ResultText>5</ResultText>
+                <ResultEncodingIdentifier>numeric</ResultEncodingIdentifier>
+                <ResultUnitText>numerisk</ResultUnitText>
+                <NationalSampleIdentifier>9999999998</NationalSampleIdentifier>
+                <IupacIdentifier>MCS88022</IupacIdentifier>
+                <ProducerOfLabResult>
+                    <Identifier>Laegehuset, Birte Hvam</Identifier>
+                    <IdentifierCode>PNT</IdentifierCode>
+                </ProducerOfLabResult>
+            <Instrument>
+                <MedComID>EPQ1225</MedComID>
+                <Manufacturer>AD Medical</Manufacturer>
+                <ProductType>Multifunction Kit</ProductType>
+                <Model> UA-767PTB-C </Model>
+                <SoftwareVersion>10.0.3452r45</SoftwareVersion>
+            </Instrument>
+            <MeasurementTransferredBy>automatic</MeasurementTransferredBy>
+            <MeasurementLocation>home</MeasurementLocation>
+            <MeasuringDataClassification>clinical</MeasuringDataClassification>
+            <MeasurementDuration>120 sek</MeasurementDuration>
+            <MeasurementScheduled>scheduled</MeasurementScheduled>
+            <HealthCareProfessionalComment>Pt. havde meget svært ved at puste igennem idag</HealthCareProfessionalComment>
+            <MeasuringCircumstances>Udblæsningen blev foretaget siddende på en stol lige efter morgenmaden</MeasuringCircumstances>
+            </LaboratoryReportExtended>
+
+        </LaboratoryReportExtendedCollection>
+        <CreatedByText>Laegehuset, Birthe Hvam</CreatedByText>
+    </SelfMonitoredSample>
+    <SelfMonitoredSample>
+        <UuidIdentifier>b33be78d-bf97-11e1-afa7-0800200c9a66</UuidIdentifier>
+        <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+        <SampleCategoryIdentifier>Klinik BT</SampleCategoryIdentifier>
+        <LaboratoryReportExtendedCollection>
+            <LaboratoryReportExtended>
+                <UuidIdentifier>b33be78e-bf97-11e1-afa7-0800200c9a66</UuidIdentifier>
+                <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+                <AnalysisText>Blodtryk systolisk;Arm</AnalysisText>
+                <ResultText>135</ResultText>
+                <ResultEncodingIdentifier>numeric</ResultEncodingIdentifier>
+                <ResultUnitText>mm/HG</ResultUnitText>
+                <NationalSampleIdentifier>9999999910</NationalSampleIdentifier>
+                <IupacIdentifier>DNK05472</IupacIdentifier>
+                <ProducerOfLabResult>
+                    <Identifier>OUH, Afd M, Birte Jensen</Identifier>
+                    <IdentifierCode>PNT</IdentifierCode>
+                </ProducerOfLabResult>
+                <Instrument>
+                    <MedComID>EPQ1225</MedComID>
+                    <Manufacturer>AD Medical</Manufacturer>
+                    <ProductType>Multifunction Kit</ProductType>
+                    <Model> UA-767PTB-C </Model>
+                    <SoftwareVersion>10.0.3452r45</SoftwareVersion>
+                </Instrument>
+                <MeasurementTransferredBy>automatic</MeasurementTransferredBy>
+                <MeasurementLocation>home</MeasurementLocation>
+                <MeasuringDataClassification>clinical</MeasuringDataClassification>
+                <MeasurementDuration>120 sek</MeasurementDuration>
+                <MeasurementScheduled>scheduled</MeasurementScheduled>
+                <HealthCareProfessionalComment>Pt. havde meget svært ved at puste igennem idag</HealthCareProfessionalComment>
+                <MeasuringCircumstances>Udblæsningen blev foretaget siddende på en stol lige efter morgenmaden</MeasuringCircumstances>
+
+            </LaboratoryReportExtended>
+            <LaboratoryReportExtended>
+                <UuidIdentifier>b33be78f-bf97-11e1-afa7-0800200c9a66</UuidIdentifier>
+                <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+                <AnalysisText>Blodtryk diastolisk;Arm</AnalysisText>
+                <ResultText>90</ResultText>
+                <ResultEncodingIdentifier>numeric</ResultEncodingIdentifier>
+                <ResultUnitText>mm/HG</ResultUnitText>
+                <NationalSampleIdentifier>9999999911</NationalSampleIdentifier>
+                <IupacIdentifier>DNK05473</IupacIdentifier>
+                <ProducerOfLabResult>
+                    <Identifier>OUH, Afd M, Birte Jensen</Identifier>
+                    <IdentifierCode>PNT</IdentifierCode>
+                </ProducerOfLabResult>
+                <Instrument>
+                    <MedComID>EPQ1225</MedComID>
+                    <Manufacturer>AD Medical</Manufacturer>
+                    <ProductType>Multifunction Kit</ProductType>
+                    <Model> UA-767PTB-C </Model>
+                    <SoftwareVersion>10.0.3452r45</SoftwareVersion>
+                </Instrument>
+                <MeasurementTransferredBy>automatic</MeasurementTransferredBy>
+                <MeasurementLocation>home</MeasurementLocation>
+                <MeasuringDataClassification>clinical</MeasuringDataClassification>
+                <MeasurementDuration>120 sek</MeasurementDuration>
+                <MeasurementScheduled>scheduled</MeasurementScheduled>
+                <HealthCareProfessionalComment>Pt. havde meget svært ved at puste igennem idag</HealthCareProfessionalComment>
+                <MeasuringCircumstances>Udblæsningen blev foretaget siddende på en stol lige efter morgenmaden</MeasuringCircumstances>
+
+            </LaboratoryReportExtended>
+        </LaboratoryReportExtendedCollection>
+        <CreatedByText>OUH, Afd. M, Birthe Jensen</CreatedByText>
+    </SelfMonitoredSample>
+    <SelfMonitoredSample>
+        <UuidIdentifier>b33be790-bf97-11e1-afa7-0800200c9a66</UuidIdentifier>
+        <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+        <SampleCategoryIdentifier>Hjemme BT</SampleCategoryIdentifier>
+        <LaboratoryReportExtendedCollection>
+            <LaboratoryReportExtended>
+                <UuidIdentifier>b33be791-bf97-11e1-afa7-0800200c9a66</UuidIdentifier>
+                <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+                <AnalysisText>Blodtryk systolisk;Arm</AnalysisText>
+                <ResultText>100</ResultText>
+                <ResultEncodingIdentifier>numeric</ResultEncodingIdentifier>
+                <ResultUnitText>mm/HG</ResultUnitText>
+                <NationalSampleIdentifier>9999999912</NationalSampleIdentifier>
+                <IupacIdentifier>MCS88019</IupacIdentifier>
+                <ProducerOfLabResult>
+                    <Identifier>Patient målt</Identifier>
+                    <IdentifierCode>POT</IdentifierCode>
+                </ProducerOfLabResult>
+                <Instrument>
+                    <MedComID>EPQ1225</MedComID>
+                    <Manufacturer>AD Medical</Manufacturer>
+                    <ProductType>Multifunction Kit</ProductType>
+                    <Model> UA-767PTB-C </Model>
+                    <SoftwareVersion>10.0.3452r45</SoftwareVersion>
+                </Instrument>
+                <MeasurementTransferredBy>automatic</MeasurementTransferredBy>
+                <MeasurementLocation>home</MeasurementLocation>
+                <MeasuringDataClassification>clinical</MeasuringDataClassification>
+                <MeasurementDuration>120 sek</MeasurementDuration>
+                <MeasurementScheduled>scheduled</MeasurementScheduled>
+                <HealthCareProfessionalComment>Pt. havde meget svært ved at puste igennem idag</HealthCareProfessionalComment>
+                <MeasuringCircumstances>Udblæsningen blev foretaget siddende på en stol lige efter morgenmaden</MeasuringCircumstances>
+
+            </LaboratoryReportExtended>
+            <LaboratoryReportExtended>
+                <UuidIdentifier>b33be792-bf97-11e1-afa7-0800200c9a66</UuidIdentifier>
+                <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+                <AnalysisText>Blodtryk diastolisk;Arm</AnalysisText>
+                <ResultText>95</ResultText>
+                <ResultEncodingIdentifier>numeric</ResultEncodingIdentifier>
+                <ResultUnitText>mm/HG</ResultUnitText>
+                <NationalSampleIdentifier>9999999913</NationalSampleIdentifier>
+                <IupacIdentifier>MCS88020</IupacIdentifier>
+                <ProducerOfLabResult>
+                    <Identifier>Patient målt</Identifier>
+                    <IdentifierCode>POT</IdentifierCode>
+                </ProducerOfLabResult>
+                <Instrument>
+                    <MedComID>EPQ1225</MedComID>
+                    <Manufacturer>AD Medical</Manufacturer>
+                    <ProductType>Multifunction Kit</ProductType>
+                    <Model> UA-767PTB-C </Model>
+                    <SoftwareVersion>10.0.3452r45</SoftwareVersion>
+                </Instrument>
+                <MeasurementTransferredBy>automatic</MeasurementTransferredBy>
+                <MeasurementLocation>home</MeasurementLocation>
+                <MeasuringDataClassification>clinical</MeasuringDataClassification>
+                <MeasurementDuration>120 sek</MeasurementDuration>
+                <MeasurementScheduled>scheduled</MeasurementScheduled>
+                <HealthCareProfessionalComment>Pt. havde meget svært ved at puste igennem idag</HealthCareProfessionalComment>
+                <MeasuringCircumstances>Udblæsningen blev foretaget siddende på en stol lige efter morgenmaden</MeasuringCircumstances>
+
+            </LaboratoryReportExtended>
+        </LaboratoryReportExtendedCollection>
+        <CreatedByText>Helbredsprofilen</CreatedByText>
+    </SelfMonitoredSample>
+    <SelfMonitoredSample>
+        <UuidIdentifier>b33be78b-bf97-11e1-afa7-0800200c9a66</UuidIdentifier>
+        <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+        <SampleCategoryIdentifier>Puls</SampleCategoryIdentifier>
+        <LaboratoryReportExtendedCollection>
+            <LaboratoryReportExtended>
+                <UuidIdentifier>b33be793-bf97-11e1-afa7-0800200c9a66</UuidIdentifier>
+                <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+                <AnalysisText>Puls;Hjerte</AnalysisText>
+                <ResultText>66</ResultText>
+                <ResultEncodingIdentifier>numeric</ResultEncodingIdentifier>
+                <ResultUnitText>1/min</ResultUnitText>
+                <NationalSampleIdentifier>9999999914</NationalSampleIdentifier>
+                <IupacIdentifier>NPU21692</IupacIdentifier>
+                <ProducerOfLabResult>
+                    <Identifier>Patient målt</Identifier>
+                    <IdentifierCode>POT</IdentifierCode>
+                </ProducerOfLabResult>
+                <Instrument>
+                    <MedComID>EPQ1225</MedComID>
+                    <Manufacturer>AD Medical</Manufacturer>
+                    <ProductType>Multifunction Kit</ProductType>
+                    <Model> UA-767PTB-C </Model>
+                    <SoftwareVersion>10.0.3452r45</SoftwareVersion>
+                </Instrument>
+                <MeasurementTransferredBy>automatic</MeasurementTransferredBy>
+                <MeasurementLocation>home</MeasurementLocation>
+                <MeasuringDataClassification>clinical</MeasuringDataClassification>
+                <MeasurementDuration>120 sek</MeasurementDuration>
+                <MeasurementScheduled>scheduled</MeasurementScheduled>
+                <HealthCareProfessionalComment>Pt. havde meget svært ved at puste igennem idag</HealthCareProfessionalComment>
+                <MeasuringCircumstances>Udblæsningen blev foretaget siddende på en stol lige efter morgenmaden</MeasuringCircumstances>
+
+            </LaboratoryReportExtended>
+        </LaboratoryReportExtendedCollection>
+        <CreatedByText>Helbredsprofilen</CreatedByText>
+    </SelfMonitoredSample>
+    <SelfMonitoredSample>
+        <UuidIdentifier>b33be78b-bf97-11e1-afa7-0800200c9a66</UuidIdentifier>
+        <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+        <SampleCategoryIdentifier>HbA1C</SampleCategoryIdentifier>
+        <LaboratoryReportExtendedCollection>
+            <LaboratoryReportExtended>
+                <UuidIdentifier>b33be794-bf97-11e1-afa7-0800200c9a66</UuidIdentifier>
+                <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+                <AnalysisText>Glukose, middel (fra HbA1c);P</AnalysisText>
+                <ResultText>7</ResultText>
+                <ResultEncodingIdentifier>numeric</ResultEncodingIdentifier>
+                <ResultUnitText>mmol/l</ResultUnitText>
+                <NationalSampleIdentifier>9999999915</NationalSampleIdentifier>
+                <IupacIdentifier>NPU27412</IupacIdentifier>
+                <ProducerOfLabResult>
+                    <Identifier>OUH, Afd M, Birte Jensen</Identifier>
+                    <IdentifierCode>PNT</IdentifierCode>
+                </ProducerOfLabResult>
+                <Instrument>
+                    <MedComID>EPQ1225</MedComID>
+                    <Manufacturer>AD Medical</Manufacturer>
+                    <ProductType>Multifunction Kit</ProductType>
+                    <Model> UA-767PTB-C </Model>
+                    <SoftwareVersion>10.0.3452r45</SoftwareVersion>
+                </Instrument>
+                <MeasurementTransferredBy>automatic</MeasurementTransferredBy>
+                <MeasurementLocation>home</MeasurementLocation>
+                <MeasuringDataClassification>clinical</MeasuringDataClassification>
+                <MeasurementDuration>120 sek</MeasurementDuration>
+                <MeasurementScheduled>scheduled</MeasurementScheduled>
+                <HealthCareProfessionalComment>Pt. havde meget svært ved at puste igennem idag</HealthCareProfessionalComment>
+                <MeasuringCircumstances>Udblæsningen blev foretaget siddende på en stol lige efter morgenmaden</MeasuringCircumstances>
+
+            </LaboratoryReportExtended>
+        </LaboratoryReportExtendedCollection>
+        <CreatedByText>OUH, Afd M, Birte Jensen</CreatedByText>
+    </SelfMonitoredSample>
+    <SelfMonitoredSample>
+        <UuidIdentifier>92a85ba0-bfad-11e1-afa7-0800200c9a66</UuidIdentifier>
+        <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+        <SampleCategoryIdentifier>Blodsukker</SampleCategoryIdentifier>
+        <LaboratoryReportExtendedCollection>
+            <LaboratoryReportExtended>
+                <UuidIdentifier>92a85ba1-bfad-11e1-afa7-0800200c9a66</UuidIdentifier>
+                <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+                <AnalysisText>Glukose;B</AnalysisText>
+                <ResultText>11</ResultText>
+                <ResultEncodingIdentifier>numeric</ResultEncodingIdentifier>
+                <ResultOperatorIdentifier>greater_than</ResultOperatorIdentifier>
+                <ResultUnitText>mmol/l</ResultUnitText>
+                <ResultAbnormalIdentifier>abnormal</ResultAbnormalIdentifier>
+                <ResultMinimumText>2</ResultMinimumText>
+                <ResultMaximumText>8</ResultMaximumText>
+                <NationalSampleIdentifier>9999999916</NationalSampleIdentifier>
+                <IupacIdentifier>NPU02187</IupacIdentifier>
+                <ProducerOfLabResult>
+                    <Identifier>OUH, Afd M, Birte Jensen</Identifier>
+                    <IdentifierCode>PNT</IdentifierCode>
+                </ProducerOfLabResult>
+                <Instrument>
+                    <MedComID>EPQ1225</MedComID>
+                    <Manufacturer>AD Medical</Manufacturer>
+                    <ProductType>Multifunction Kit</ProductType>
+                    <Model> UA-767PTB-C </Model>
+                    <SoftwareVersion>10.0.3452r45</SoftwareVersion>
+                </Instrument>
+                <MeasurementTransferredBy>automatic</MeasurementTransferredBy>
+                <MeasurementLocation>home</MeasurementLocation>
+                <MeasuringDataClassification>clinical</MeasuringDataClassification>
+                <MeasurementDuration>120 sek</MeasurementDuration>
+                <MeasurementScheduled>scheduled</MeasurementScheduled>
+                <HealthCareProfessionalComment>Pt. havde meget svært ved at puste igennem idag</HealthCareProfessionalComment>
+                <MeasuringCircumstances>Udblæsningen blev foretaget siddende på en stol lige efter morgenmaden</MeasuringCircumstances>
+
+            </LaboratoryReportExtended>
+        </LaboratoryReportExtendedCollection>
+        <CreatedByText>OUH, Afd M, Birte Jensen</CreatedByText>
+    </SelfMonitoredSample>
+    <SelfMonitoredSample>
+        <UuidIdentifier>92a85ba2-bfad-11e1-afa7-0800200c9a66</UuidIdentifier>
+        <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+        <SampleCategoryIdentifier>Kolesterol</SampleCategoryIdentifier>
+        <LaboratoryReportExtendedCollection>
+            <LaboratoryReportExtended>
+                <UuidIdentifier>92a85ba3-bfad-11e1-afa7-0800200c9a66</UuidIdentifier>
+                <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+                <AnalysisText>Kolesterol;P</AnalysisText>
+                <ResultText>5</ResultText>
+                <ResultEncodingIdentifier>numeric</ResultEncodingIdentifier>
+                <ResultOperatorIdentifier>greater_than</ResultOperatorIdentifier>
+                <ResultUnitText>mmol/l</ResultUnitText>
+                <ResultAbnormalIdentifier>to_high</ResultAbnormalIdentifier>
+                <ResultMinimumText>1</ResultMinimumText>
+                <ResultMaximumText>5</ResultMaximumText>
+                <NationalSampleIdentifier>9999999917</NationalSampleIdentifier>
+                <IupacIdentifier>NPU01566</IupacIdentifier>
+                <ProducerOfLabResult>
+                    <Identifier>OUH, Afd M, Birte Jensen</Identifier>
+                    <IdentifierCode>PNT</IdentifierCode>
+                </ProducerOfLabResult>
+                <Instrument>
+                    <MedComID>EPQ1225</MedComID>
+                    <Manufacturer>AD Medical</Manufacturer>
+                    <ProductType>Multifunction Kit</ProductType>
+                    <Model> UA-767PTB-C </Model>
+                    <SoftwareVersion>10.0.3452r45</SoftwareVersion>
+                </Instrument>
+                <MeasurementTransferredBy>automatic</MeasurementTransferredBy>
+                <MeasurementLocation>home</MeasurementLocation>
+                <MeasuringDataClassification>clinical</MeasuringDataClassification>
+                <MeasurementDuration>120 sek</MeasurementDuration>
+                <MeasurementScheduled>scheduled</MeasurementScheduled>
+                <HealthCareProfessionalComment>Pt. havde meget svært ved at puste igennem idag</HealthCareProfessionalComment>
+                <MeasuringCircumstances>Udblæsningen blev foretaget siddende på en stol lige efter morgenmaden</MeasuringCircumstances>
+
+            </LaboratoryReportExtended>
+            <LaboratoryReportExtended>
+                <UuidIdentifier>92a85ba4-bfad-11e1-afa7-0800200c9a66</UuidIdentifier>
+                <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+                <AnalysisText>Kolesterol HDL;P</AnalysisText>
+                <ResultText>1</ResultText>
+                <ResultEncodingIdentifier>numeric</ResultEncodingIdentifier>
+                <ResultOperatorIdentifier>greater_than</ResultOperatorIdentifier>
+                <ResultUnitText>mmol/l</ResultUnitText>
+                <ResultAbnormalIdentifier>unspecified</ResultAbnormalIdentifier>
+                <ResultMinimumText>1</ResultMinimumText>
+                <NationalSampleIdentifier>9999999918</NationalSampleIdentifier>
+                <IupacIdentifier>NPU01567</IupacIdentifier>
+                <ProducerOfLabResult>
+                    <Identifier>OUH, Afd M, Birte Jensen</Identifier>
+                    <IdentifierCode>PNT</IdentifierCode>
+                </ProducerOfLabResult>
+                <Instrument>
+                    <MedComID>EPQ1225</MedComID>
+                    <Manufacturer>AD Medical</Manufacturer>
+                    <ProductType>Multifunction Kit</ProductType>
+                    <Model> UA-767PTB-C </Model>
+                    <SoftwareVersion>10.0.3452r45</SoftwareVersion>
+                </Instrument>
+                <MeasurementTransferredBy>automatic</MeasurementTransferredBy>
+                <MeasurementLocation>home</MeasurementLocation>
+                <MeasuringDataClassification>clinical</MeasuringDataClassification>
+                <MeasurementDuration>120 sek</MeasurementDuration>
+                <MeasurementScheduled>scheduled</MeasurementScheduled>
+                <HealthCareProfessionalComment>Pt. havde meget svært ved at puste igennem idag</HealthCareProfessionalComment>
+                <MeasuringCircumstances>Udblæsningen blev foretaget siddende på en stol lige efter morgenmaden</MeasuringCircumstances>
+
+            </LaboratoryReportExtended>
+            <LaboratoryReportExtended>
+                <UuidIdentifier>92a85ba4-bfad-11e1-afa7-0800200c9a66</UuidIdentifier>
+                <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+                <AnalysisText>Kolesterol LDL;P</AnalysisText>
+                <ResultText>3</ResultText>
+                <ResultEncodingIdentifier>numeric</ResultEncodingIdentifier>
+                <ResultUnitText>mmol/l</ResultUnitText>
+                <ResultMinimumText>0</ResultMinimumText>
+                <ResultMaximumText>5</ResultMaximumText>
+                <NationalSampleIdentifier>9999999919</NationalSampleIdentifier>
+                <IupacIdentifier>NPU01568</IupacIdentifier>
+                <ProducerOfLabResult>
+                    <Identifier>OUH, Afd M, Birte Jensen</Identifier>
+                    <IdentifierCode>PNT</IdentifierCode>
+                </ProducerOfLabResult>
+                <Instrument>
+                    <MedComID>EPQ1225</MedComID>
+                    <Manufacturer>AD Medical</Manufacturer>
+                    <ProductType>Multifunction Kit</ProductType>
+                    <Model> UA-767PTB-C </Model>
+                    <SoftwareVersion>10.0.3452r45</SoftwareVersion>
+                </Instrument>
+                <MeasurementTransferredBy>automatic</MeasurementTransferredBy>
+                <MeasurementLocation>home</MeasurementLocation>
+                <MeasuringDataClassification>clinical</MeasuringDataClassification>
+                <MeasurementDuration>120 sek</MeasurementDuration>
+                <MeasurementScheduled>scheduled</MeasurementScheduled>
+                <HealthCareProfessionalComment>Pt. havde meget svært ved at puste igennem idag</HealthCareProfessionalComment>
+                <MeasuringCircumstances>Udblæsningen blev foretaget siddende på en stol lige efter morgenmaden</MeasuringCircumstances>
+
+            </LaboratoryReportExtended>
+            <LaboratoryReportExtended>
+                <UuidIdentifier>92a85ba5-bfad-11e1-afa7-0800200c9a66</UuidIdentifier>
+                <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+                <AnalysisText>Triglycerid;P</AnalysisText>
+                <ResultText>0.3</ResultText>
+                <ResultEncodingIdentifier>numeric</ResultEncodingIdentifier>
+                <ResultUnitText>mmol/l</ResultUnitText>
+                <ResultMinimumText>0</ResultMinimumText>
+                <ResultMaximumText>2</ResultMaximumText>
+                <NationalSampleIdentifier>9999999920</NationalSampleIdentifier>
+                <IupacIdentifier>NPU04094</IupacIdentifier>
+                <ProducerOfLabResult>
+                    <Identifier>OUH, Afd M, Birte Jensen</Identifier>
+                    <IdentifierCode>PNT</IdentifierCode>
+                </ProducerOfLabResult>
+                <Instrument>
+                    <MedComID>EPQ1225</MedComID>
+                    <Manufacturer>AD Medical</Manufacturer>
+                    <ProductType>Multifunction Kit</ProductType>
+                    <Model> UA-767PTB-C </Model>
+                    <SoftwareVersion>10.0.3452r45</SoftwareVersion>
+                </Instrument>
+                <MeasurementTransferredBy>automatic</MeasurementTransferredBy>
+                <MeasurementLocation>home</MeasurementLocation>
+                <MeasuringDataClassification>clinical</MeasuringDataClassification>
+                <MeasurementDuration>120 sek</MeasurementDuration>
+                <MeasurementScheduled>scheduled</MeasurementScheduled>
+                <HealthCareProfessionalComment>Pt. havde meget svært ved at puste igennem idag</HealthCareProfessionalComment>
+                <MeasuringCircumstances>Udblæsningen blev foretaget siddende på en stol lige efter morgenmaden</MeasuringCircumstances>
+
+            </LaboratoryReportExtended>
+        </LaboratoryReportExtendedCollection>
+        <CreatedByText>OUH, Afd M, Birte Jensen</CreatedByText>
+    </SelfMonitoredSample>
+    <SelfMonitoredSample>
+        <UuidIdentifier>92a85ba6-bfad-11e1-afa7-0800200c9a66</UuidIdentifier>
+        <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+        <SampleCategoryIdentifier>Vægt</SampleCategoryIdentifier>
+        <LaboratoryReportExtendedCollection>
+            <LaboratoryReportExtended>
+                <UuidIdentifier>92a85ba7-bfad-11e1-afa7-0800200c9a66</UuidIdentifier>
+                <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+                <AnalysisText>Legeme masse;Pt</AnalysisText>
+                <ResultText>76.0</ResultText>
+                <ResultEncodingIdentifier>numeric</ResultEncodingIdentifier>
+                <ResultUnitText>kg</ResultUnitText>
+                <NationalSampleIdentifier>9999999921</NationalSampleIdentifier>
+                <IupacIdentifier>NPU03804</IupacIdentifier>
+                <ProducerOfLabResult>
+                    <Identifier>Patient målt</Identifier>
+                    <IdentifierCode>POT</IdentifierCode>
+                </ProducerOfLabResult>
+                <Instrument>
+                    <MedComID>EPQ1225</MedComID>
+                    <Manufacturer>AD Medical</Manufacturer>
+                    <ProductType>Multifunction Kit</ProductType>
+                    <Model> UA-767PTB-C </Model>
+                    <SoftwareVersion>10.0.3452r45</SoftwareVersion>
+                </Instrument>
+                <MeasurementTransferredBy>automatic</MeasurementTransferredBy>
+                <MeasurementLocation>home</MeasurementLocation>
+                <MeasuringDataClassification>clinical</MeasuringDataClassification>
+                <MeasurementDuration>120 sek</MeasurementDuration>
+                <MeasurementScheduled>scheduled</MeasurementScheduled>
+                <HealthCareProfessionalComment>Pt. havde meget svært ved at puste igennem idag</HealthCareProfessionalComment>
+                <MeasuringCircumstances>Udblæsningen blev foretaget siddende på en stol lige efter morgenmaden</MeasuringCircumstances>
+
+            </LaboratoryReportExtended>
+        </LaboratoryReportExtendedCollection>
+        <CreatedByText>Klonk</CreatedByText>
+    </SelfMonitoredSample>
+    <SelfMonitoredSample>
+        <UuidIdentifier>92a85ba8-bfad-11e1-afa7-0800200c9a66</UuidIdentifier>
+        <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+        <SampleCategoryIdentifier>Livvidde</SampleCategoryIdentifier>
+        <LaboratoryReportExtendedCollection>
+            <LaboratoryReportExtended>
+                <UuidIdentifier>92a85ba9-bfad-11e1-afa7-0800200c9a66</UuidIdentifier>
+                <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+                <AnalysisText>Livvidde</AnalysisText>
+                <ResultText>92</ResultText>
+                <ResultEncodingIdentifier>numeric</ResultEncodingIdentifier>
+                <ResultUnitText>cm</ResultUnitText>
+                <NationalSampleIdentifier>9999999922</NationalSampleIdentifier>
+                <IupacIdentifier>MCS88018</IupacIdentifier>
+                <ProducerOfLabResult>
+                    <Identifier>Patient målt</Identifier>
+                    <IdentifierCode>POT</IdentifierCode>
+                </ProducerOfLabResult>
+                <Instrument>
+                    <MedComID>EPQ1225</MedComID>
+                    <Manufacturer>AD Medical</Manufacturer>
+                    <ProductType>Multifunction Kit</ProductType>
+                    <Model> UA-767PTB-C </Model>
+                    <SoftwareVersion>10.0.3452r45</SoftwareVersion>
+                </Instrument>
+                <MeasurementTransferredBy>automatic</MeasurementTransferredBy>
+                <MeasurementLocation>home</MeasurementLocation>
+                <MeasuringDataClassification>clinical</MeasuringDataClassification>
+                <MeasurementDuration>120 sek</MeasurementDuration>
+                <MeasurementScheduled>scheduled</MeasurementScheduled>
+                <HealthCareProfessionalComment>Pt. havde meget svært ved at puste igennem idag</HealthCareProfessionalComment>
+                <MeasuringCircumstances>Udblæsningen blev foretaget siddende på en stol lige efter morgenmaden</MeasuringCircumstances>
+
+            </LaboratoryReportExtended>
+        </LaboratoryReportExtendedCollection>
+        <CreatedByText>Klonk</CreatedByText>
+    </SelfMonitoredSample>
+    <SelfMonitoredSample>
+        <UuidIdentifier>92a85baa-bfad-11e1-afa7-0800200c9a66</UuidIdentifier>
+        <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+        <SampleCategoryIdentifier>Højde</SampleCategoryIdentifier>
+        <LaboratoryReportExtendedCollection>
+            <LaboratoryReportExtended>
+                <UuidIdentifier>92a85bab-bfad-11e1-afa7-0800200c9a66</UuidIdentifier>
+                <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+                <AnalysisText>Legeme højde;Pt</AnalysisText>
+                <ResultText>1.92</ResultText>
+                <ResultEncodingIdentifier>numeric</ResultEncodingIdentifier>
+                <ResultUnitText>m</ResultUnitText>
+                <NationalSampleIdentifier>9999999923</NationalSampleIdentifier>
+                <IupacIdentifier>NPU03794</IupacIdentifier>
+                <ProducerOfLabResult>
+                    <Identifier>Patient målt</Identifier>
+                    <IdentifierCode>POT</IdentifierCode>
+                </ProducerOfLabResult>
+                <Instrument>
+                    <MedComID>EPQ1225</MedComID>
+                    <Manufacturer>AD Medical</Manufacturer>
+                    <ProductType>Multifunction Kit</ProductType>
+                    <Model> UA-767PTB-C </Model>
+                    <SoftwareVersion>10.0.3452r45</SoftwareVersion>
+                </Instrument>
+                <MeasurementTransferredBy>automatic</MeasurementTransferredBy>
+                <MeasurementLocation>home</MeasurementLocation>
+                <MeasuringDataClassification>clinical</MeasuringDataClassification>
+                <MeasurementDuration>120 sek</MeasurementDuration>
+                <MeasurementScheduled>scheduled</MeasurementScheduled>
+                <HealthCareProfessionalComment>Pt. havde meget svært ved at puste igennem idag</HealthCareProfessionalComment>
+                <MeasuringCircumstances>Udblæsningen blev foretaget siddende på en stol lige efter morgenmaden</MeasuringCircumstances>
+
+            </LaboratoryReportExtended>
+        </LaboratoryReportExtendedCollection>
+        <CreatedByText>Hjerteportalen</CreatedByText>
+    </SelfMonitoredSample>
+    <SelfMonitoredSample>
+        <UuidIdentifier>92a85bac-bfad-11e1-afa7-0800200c9a66</UuidIdentifier>
+        <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+        <SampleCategoryIdentifier>Motion</SampleCategoryIdentifier>
+        <LaboratoryReportExtendedCollection>
+            <LaboratoryReportExtended>
+                <UuidIdentifier>92a85bad-bfad-11e1-afa7-0800200c9a66</UuidIdentifier>
+                <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+                <AnalysisText>Pt-Motion;tid</AnalysisText>
+                <ResultText>5.5</ResultText>
+                <ResultEncodingIdentifier>numeric</ResultEncodingIdentifier>
+                <ResultUnitText>h/uge</ResultUnitText>
+                <NationalSampleIdentifier>9999999924</NationalSampleIdentifier>
+                <IupacIdentifier>MCS88801</IupacIdentifier>
+                <ProducerOfLabResult>
+                    <Identifier>Patient målt</Identifier>
+                    <IdentifierCode>POT</IdentifierCode>
+                </ProducerOfLabResult>
+                <Instrument>
+                    <MedComID>EPQ1225</MedComID>
+                    <Manufacturer>AD Medical</Manufacturer>
+                    <ProductType>Multifunction Kit</ProductType>
+                    <Model> UA-767PTB-C </Model>
+                    <SoftwareVersion>10.0.3452r45</SoftwareVersion>
+                </Instrument>
+                <MeasurementTransferredBy>automatic</MeasurementTransferredBy>
+                <MeasurementLocation>home</MeasurementLocation>
+                <MeasuringDataClassification>clinical</MeasuringDataClassification>
+                <MeasurementDuration>120 sek</MeasurementDuration>
+                <MeasurementScheduled>scheduled</MeasurementScheduled>
+                <HealthCareProfessionalComment>Pt. havde meget svært ved at puste igennem idag</HealthCareProfessionalComment>
+                <MeasuringCircumstances>Udblæsningen blev foretaget siddende på en stol lige efter morgenmaden</MeasuringCircumstances>
+
+            </LaboratoryReportExtended>
+        </LaboratoryReportExtendedCollection>
+        <CreatedByText>Sundhed.dk</CreatedByText>
+    </SelfMonitoredSample>
+    <SelfMonitoredSample>
+        <UuidIdentifier>92a85bae-bfad-11e1-afa7-0800200c9a66</UuidIdentifier>
+        <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+        <SampleCategoryIdentifier>Proteinuri</SampleCategoryIdentifier>
+        <LaboratoryReportExtendedCollection>
+            <LaboratoryReportExtended>
+                <UuidIdentifier>92a85baf-bfad-11e1-afa7-0800200c9a66</UuidIdentifier>
+                <CreatedDateTime>2006-05-04T18:13:51.0Z</CreatedDateTime>
+                <AnalysisText>Albumin (semikvant);U</AnalysisText>
+                <ResultText>2</ResultText>
+                <ResultEncodingIdentifier>numeric</ResultEncodingIdentifier>
+                <ResultUnitText>Arb.enhed 1 2 3 4</ResultUnitText>
+                <NationalSampleIdentifier>9999999925</NationalSampleIdentifier>
+                <IupacIdentifier>NPU17997</IupacIdentifier>
+                <ProducerOfLabResult>
+                    <Identifier>Patient målt</Identifier>
+                    <IdentifierCode>POT</IdentifierCode>
+                </ProducerOfLabResult>
+                <Instrument>
+                    <MedComID>EPQ1225</MedComID>
+                    <Manufacturer>AD Medical</Manufacturer>
+                    <ProductType>Multifunction Kit</ProductType>
+                    <Model> UA-767PTB-C </Model>
+                    <SoftwareVersion>10.0.3452r45</SoftwareVersion>
+                </Instrument>
+                <MeasurementTransferredBy>automatic</MeasurementTransferredBy>
+                <MeasurementLocation>home</MeasurementLocation>
+                <MeasuringDataClassification>clinical</MeasuringDataClassification>
+                <MeasurementDuration>120 sek</MeasurementDuration>
+                <MeasurementScheduled>scheduled</MeasurementScheduled>
+                <HealthCareProfessionalComment>Pt. havde meget svært ved at puste igennem idag</HealthCareProfessionalComment>
+                <MeasuringCircumstances>Udblæsningen blev foretaget siddende på en stol lige efter morgenmaden</MeasuringCircumstances>
+
+            </LaboratoryReportExtended>
+        </LaboratoryReportExtendedCollection>
+        <CreatedByText>Helbredsportalen</CreatedByText>
+    </SelfMonitoredSample>
+</SelfMonitoredSampleCollection>
+

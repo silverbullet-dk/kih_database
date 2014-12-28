@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project name="KIH database" soapui-version="3.5" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="ChronicDatasetServiceServiceSoapBinding" type="wsdl" bindingName="{http://kroniker.service.kihdb.silverbullet.dk/}ChronicDatasetServiceServiceSoapBinding" soapVersion="1_1" anonymous="optional" definition="http://localhost:8080/kih_database/services/chronicDataset?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost:8080/kih_database/services/chronicDataset?wsdl"><con:part><con:url>http://localhost:8080/kih_database/services/chronicDataset?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="ChronicDatasetServiceService" targetNamespace="http://kroniker.service.kihdb.silverbullet.dk/" xmlns:ns1="urn:oio:medcom:chronic-fault:1.0.0" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://kroniker.service.kihdb.silverbullet.dk/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:types>
+    <xs:schema targetNamespace="urn:oio:medcom:chronic-fault:1.0.0" version="1.0" xmlns:tns="urn:oio:medcom:chronic-fault:1.0.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="HardFaultDetailMessage" type="tns:FaultDetailMessageType"/>
+      <xs:element name="SoftFaultDetailMessage" type="tns:FaultDetailMessageType"/>
+      <xs:complexType name="FaultDetailMessageType">
+        <xs:sequence>
+          <xs:element form="qualified" name="Message" type="xs:string"/>
+          <xs:element form="qualified" minOccurs="0" name="Code" type="xs:string"/>
+          <xs:element form="qualified" minOccurs="0" name="System" type="xs:string"/>
+          <xs:element form="qualified" minOccurs="0" name="Cause" type="xs:string"/>
+          <xs:element form="qualified" minOccurs="0" name="Detail" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema targetNamespace="urn:oio:medcom:chronic-dataset:1.0.0" version="1.0" xmlns:ns1="http://rep.oio.dk/medcom.dk/xml/schemas/2011/06/20/" xmlns:tns="urn:oio:medcom:chronic-dataset:1.0.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://rep.oio.dk/medcom.dk/xml/schemas/2011/06/20/"/>
+      <xs:element name="GetChronicDatasetRequestMessage">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element form="qualified" name="CivilRegistrationNumber" type="xs:string"/>
+            <xs:element form="qualified" minOccurs="0" name="Since" type="xs:date"/>
+            <xs:element form="qualified" minOccurs="0" name="MaximumReturnedMonitoreringOgMaal" type="xs:integer"/>
+            <xs:element form="qualified" minOccurs="0" name="DataSegmentList" type="tns:DataSegmentListType"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetChronicDatasetResponseMessage">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element form="qualified" name="MedComKD" type="ns1:MedComKDType"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="UploadChronicDatasetRequestMessage">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element form="qualified" name="MedComKD" type="ns1:MedComKDType"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="UploadChronicDatasetResponseMessage">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:complexType name="DataSegmentListType">
+        <xs:sequence>
+          <xs:element form="qualified" maxOccurs="unbounded" minOccurs="0" name="DataSegment" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://rep.oio.dk/medcom.dk/xml/schemas/2011/06/20/" version="1.0" xmlns:tns="http://rep.oio.dk/medcom.dk/xml/schemas/2011/06/20/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="ATC" type="xs:string"/>
+      <xs:element name="Abnorm" type="xs:string"/>
+      <xs:element name="Afdeling" type="xs:string"/>
+      <xs:element name="Analyse" type="xs:string"/>
+      <xs:element name="AnalyseID" type="xs:string"/>
+      <xs:element name="Bold" type="tns:BreakableText"/>
+      <xs:element name="Break">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="By" type="xs:string"/>
+      <xs:element name="Center" type="tns:BreakableText"/>
+      <xs:element name="Dato" type="xs:anySimpleType"/>
+      <xs:element name="DiagnoseBeskrivelse" type="xs:string"/>
+      <xs:element name="DiagnoseKode" type="xs:string"/>
+      <xs:element name="DiagnoseType" type="xs:string"/>
+      <xs:element name="Dosis" type="xs:string"/>
+      <xs:element name="Efternavn" type="xs:string"/>
+      <xs:element name="Enhed" type="xs:string"/>
+      <xs:element name="FMK" type="xs:string"/>
+      <xs:element name="FixedFont" type="tns:SimpleFormattedText"/>
+      <xs:element name="FoedselsDato" type="xs:anySimpleType"/>
+      <xs:element name="Form" type="xs:string"/>
+      <xs:element name="Fornavn" type="xs:string"/>
+      <xs:element name="ID" type="xs:string"/>
+      <xs:element name="IUPAC" type="xs:string"/>
+      <xs:element name="Indikation" type="xs:string"/>
+      <xs:element name="Italic" type="tns:BreakableText"/>
+      <xs:element name="Kode" type="xs:string"/>
+      <xs:element name="Koen" type="xs:string"/>
+      <xs:element name="Kontakttelefon" type="xs:string"/>
+      <xs:element name="Max" type="xs:string"/>
+      <xs:element name="MedComKD" type="tns:MedComKDType"/>
+      <xs:element name="Min" type="xs:string"/>
+      <xs:element name="Navn" type="xs:string"/>
+      <xs:element name="Organisation" type="xs:string"/>
+      <xs:element name="PatientensMaal" type="xs:string"/>
+      <xs:element name="Person" type="xs:string"/>
+      <xs:element name="Postnummer" type="xs:string"/>
+      <xs:element name="Praeparat" type="xs:string"/>
+      <xs:element name="Praksis" type="xs:string"/>
+      <xs:element name="Resultat" type="xs:string"/>
+      <xs:element name="Right" type="tns:BreakableText"/>
+      <xs:element name="Space">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Styrke" type="xs:string"/>
+      <xs:element name="Tekst" type="tns:FormattedTextType"/>
+      <xs:element name="Titel" type="xs:string"/>
+      <xs:element name="Type" type="xs:string"/>
+      <xs:element name="UdfoertAf" type="xs:string"/>
+      <xs:element name="Underline" type="tns:BreakableText"/>
+      <xs:element name="Vej" type="xs:string"/>
+      <xs:element name="Ydernummer" type="xs:string"/>
+      <xs:element name="eMail" type="xs:string"/>
+      <xs:complexType name="MedComKDType">
+        <xs:sequence>
+          <xs:element name="Borger" type="tns:BorgerType"/>
+          <xs:element minOccurs="0" name="EgenLaege" type="tns:EgenLaegeType"/>
+          <xs:element minOccurs="0" name="Paaroerende" type="tns:PaaroerendeType"/>
+          <xs:element minOccurs="0" name="Samtykke" type="tns:SamtykkeType"/>
+          <xs:element minOccurs="0" name="MinDagbog" type="tns:MinDagbogType"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="LaegensUdredning" type="tns:LaegensUdredningType"/>
+          <xs:element minOccurs="0" name="Kontakter" type="tns:KontakterType"/>
+          <xs:element minOccurs="0" name="RelevanteDiagnoser" type="tns:RelevanteDiagnoserType"/>
+          <xs:element minOccurs="0" name="RelevanteLabsvar" type="tns:RelevanteLabsvarType"/>
+          <xs:element minOccurs="0" name="AktuelMedicin" type="tns:AktuelMedicinType"/>
+          <xs:element minOccurs="0" name="SKLNoter" type="tns:SKLNoterType"/>
+          <xs:element minOccurs="0" name="Kalender" type="tns:KalenderType"/>
+          <xs:element minOccurs="0" name="MonitoreringOgMaal" type="tns:MonitoreringOgMaalType"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="BorgerType">
+        <xs:sequence>
+          <xs:element name="CPR" type="xs:string"/>
+          <xs:element minOccurs="0" name="Fornavn" type="xs:string"/>
+          <xs:element minOccurs="0" name="Efternavn" type="xs:string"/>
+          <xs:element minOccurs="0" name="FoedselsDato" type="xs:date"/>
+          <xs:element minOccurs="0" name="Koen" type="xs:string"/>
+          <xs:element minOccurs="0" name="Vej" type="xs:string"/>
+          <xs:element minOccurs="0" name="Postnummer" type="xs:string"/>
+          <xs:element minOccurs="0" name="By" type="xs:string"/>
+          <xs:element minOccurs="0" name="Kontakttelefon" type="xs:string"/>
+          <xs:element minOccurs="0" name="eMail" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="EgenLaegeType">
+        <xs:sequence>
+          <xs:element name="Ydernummer" type="xs:string"/>
+          <xs:element name="Praksis" type="xs:string"/>
+          <xs:element minOccurs="0" name="Navn" type="xs:string"/>
+          <xs:element minOccurs="0" name="Vej" type="xs:string"/>
+          <xs:element minOccurs="0" name="Postnummer" type="xs:string"/>
+          <xs:element minOccurs="0" name="By" type="xs:string"/>
+          <xs:element minOccurs="0" name="Kontakttelefon" type="xs:string"/>
+          <xs:element minOccurs="0" name="eMail" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="PaaroerendeType">
+        <xs:sequence>
+          <xs:element name="Fornavn" type="xs:string"/>
+          <xs:element name="Efternavn" type="xs:string"/>
+          <xs:element minOccurs="0" name="Vej" type="xs:string"/>
+          <xs:element minOccurs="0" name="Postnummer" type="xs:string"/>
+          <xs:element minOccurs="0" name="By" type="xs:string"/>
+          <xs:element minOccurs="0" name="Kontakttelefon" type="xs:string"/>
+          <xs:element minOccurs="0" name="eMail" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="SamtykkeType">
+        <xs:sequence>
+          <xs:element name="Dato" type="xs:dateTime"/>
+          <xs:element name="SamtykkeGivet" type="xs:boolean"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="MinDagbogType">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="Notat" type="tns:NotatType"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="NotatType">
+        <xs:sequence>
+          <xs:element name="ID" type="xs:string"/>
+          <xs:element name="Dato" type="xs:dateTime"/>
+          <xs:element name="Tekst" type="tns:FormattedTextType"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType mixed="true" name="FormattedTextType">
+        <xs:sequence>
+          <xs:choice maxOccurs="unbounded" minOccurs="0">
+            <xs:element ref="tns:Right"/>
+            <xs:element ref="tns:Italic"/>
+            <xs:element ref="tns:FixedFont"/>
+            <xs:element ref="tns:Underline"/>
+            <xs:element ref="tns:Space"/>
+            <xs:element ref="tns:Break"/>
+            <xs:element ref="tns:Center"/>
+            <xs:element ref="tns:Bold"/>
+          </xs:choice>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType mixed="true" name="BreakableText">
+        <xs:sequence>
+          <xs:choice maxOccurs="unbounded" minOccurs="0">
+            <xs:element ref="tns:Space"/>
+            <xs:element ref="tns:Break"/>
+          </xs:choice>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType mixed="true" name="SimpleFormattedText">
+        <xs:sequence>
+          <xs:choice maxOccurs="unbounded" minOccurs="0">
+            <xs:element ref="tns:Right"/>
+            <xs:element ref="tns:Italic"/>
+            <xs:element ref="tns:Underline"/>
+            <xs:element ref="tns:Space"/>
+            <xs:element ref="tns:Break"/>
+            <xs:element ref="tns:Center"/>
+            <xs:element ref="tns:Bold"/>
+          </xs:choice>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="KalenderType">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="Aftale" type="tns:AftaleType"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="AftaleType">
+        <xs:sequence>
+          <xs:element name="ID" type="xs:string"/>
+          <xs:element name="Dato" type="xs:dateTime"/>
+          <xs:element name="Kode" type="xs:string"/>
+          <xs:element name="Tekst" type="tns:FormattedTextType"/>
+          <xs:element name="UdfoertAf" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="StdHjemmeMonType">
+        <xs:sequence>
+          <xs:element name="ID" type="xs:string"/>
+          <xs:element name="Dato" type="xs:dateTime"/>
+          <xs:element name="AnalyseID" type="xs:string"/>
+          <xs:element name="IUPAC" type="xs:string"/>
+          <xs:element name="Analyse" type="xs:string"/>
+          <xs:element name="Resultat" type="xs:string"/>
+          <xs:element name="Enhed" type="xs:string"/>
+          <xs:element minOccurs="0" name="Min" type="xs:string"/>
+          <xs:element minOccurs="0" name="Max" type="xs:string"/>
+          <xs:element minOccurs="0" name="Abnorm" type="xs:string"/>
+          <xs:element minOccurs="0" name="PatientensMaal" type="xs:string"/>
+          <xs:element name="UdfoertAf" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="KontakterType">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="Sygehuskontakt" type="tns:KontakterTypeType"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="Kommunekontakt" type="tns:KontakterTypeType"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="KontakterTypeType">
+        <xs:sequence>
+          <xs:element name="Kontakt" type="xs:string"/>
+          <xs:element name="ID" type="xs:string"/>
+          <xs:element name="UdfoertAf" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="SpirometriType">
+        <xs:sequence>
+          <xs:element name="ID" type="xs:string"/>
+          <xs:element name="Dato" type="xs:dateTime"/>
+          <xs:element name="AnalyseID" type="xs:string"/>
+          <xs:element name="FEV1" type="tns:HjemmeMonType"/>
+          <xs:element name="FVC" type="tns:HjemmeMonType"/>
+          <xs:element name="FEV1FVCRatio" type="tns:HjemmeMonType"/>
+          <xs:element name="FEV1Pct" type="tns:HjemmeMonType"/>
+          <xs:element name="UdfoertAf" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="HjemmeMonType">
+        <xs:sequence>
+          <xs:element name="IUPAC" type="xs:string"/>
+          <xs:element name="Analyse" type="xs:string"/>
+          <xs:element name="Resultat" type="xs:string"/>
+          <xs:element name="Enhed" type="xs:string"/>
+          <xs:element minOccurs="0" name="Min" type="xs:string"/>
+          <xs:element minOccurs="0" name="Max" type="xs:string"/>
+          <xs:element minOccurs="0" name="Abnorm" type="xs:string"/>
+          <xs:element minOccurs="0" name="PatientensMaal" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="RygningType">
+        <xs:sequence>
+          <xs:element name="ID" type="xs:string"/>
+          <xs:element name="Dato" type="xs:dateTime"/>
+          <xs:element name="AnalyseID" type="xs:string"/>
+          <xs:element name="Status" type="tns:HjemmeMonType"/>
+          <xs:element name="PakkeAar" type="tns:HjemmeMonType"/>
+          <xs:element name="UdfoertAf" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="LabSvarType">
+        <xs:sequence>
+          <xs:element name="ID" type="xs:string"/>
+          <xs:element name="Dato" type="xs:dateTime"/>
+          <xs:element name="Analyse" type="xs:string"/>
+          <xs:element name="Resultat" type="xs:string"/>
+          <xs:element name="Enhed" type="xs:string"/>
+          <xs:element minOccurs="0" name="Abnorm" type="xs:string"/>
+          <xs:element minOccurs="0" name="Min" type="xs:string"/>
+          <xs:element minOccurs="0" name="Max" type="xs:string"/>
+          <xs:element name="AnalyseID" type="xs:string"/>
+          <xs:element name="IUPAC" type="xs:string"/>
+          <xs:element name="UdfoertAf" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="RelevanteLabsvarType">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="Labsvar" type="tns:LabSvarType"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="MedicinType">
+        <xs:sequence>
+          <xs:element name="ID" type="xs:string"/>
+          <xs:element name="Dato" type="xs:dateTime"/>
+          <xs:element name="FMK" type="xs:string"/>
+          <xs:element name="Praeparat" type="xs:string"/>
+          <xs:element name="Form" type="xs:string"/>
+          <xs:element name="Styrke" type="xs:string"/>
+          <xs:element name="Dosis" type="xs:string"/>
+          <xs:element minOccurs="0" name="Type" type="xs:string"/>
+          <xs:element minOccurs="0" name="Indikation" type="xs:string"/>
+          <xs:element name="ATC" type="xs:string"/>
+          <xs:element name="UdfoertAf" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="NoteTypeType">
+        <xs:sequence>
+          <xs:element name="ID" type="xs:string"/>
+          <xs:element name="Dato" type="xs:dateTime"/>
+          <xs:element name="TYPE" type="xs:string"/>
+          <xs:element minOccurs="0" name="Titel" type="xs:string"/>
+          <xs:element minOccurs="0" name="Tekst" type="tns:FormattedTextType"/>
+          <xs:element name="UdfoertAf" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="DiagnoseType">
+        <xs:sequence>
+          <xs:element name="ID" type="xs:string"/>
+          <xs:element name="Dato" type="xs:dateTime"/>
+          <xs:element name="DiagnoseType" type="xs:string"/>
+          <xs:element name="DiagnoseKode" type="xs:string"/>
+          <xs:element minOccurs="0" name="DiagnoseBeskrivelse" type="xs:string"/>
+          <xs:element name="UdfoertAf" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="HenvisningsDiagnoseType">
+        <xs:sequence>
+          <xs:element name="Dato" type="xs:dateTime"/>
+          <xs:element name="DiagnoseType" type="xs:string"/>
+          <xs:element name="DiagnoseKode" type="xs:string"/>
+          <xs:element minOccurs="0" name="DiagnoseBeskrivelse" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="KolesterolType">
+        <xs:sequence>
+          <xs:element name="ID" type="xs:string"/>
+          <xs:element name="Dato" type="xs:dateTime"/>
+          <xs:element name="AnalyseID" type="xs:string"/>
+          <xs:element name="SamletKolesterol" type="tns:HjemmeMonType"/>
+          <xs:element name="HDL" type="tns:HjemmeMonType"/>
+          <xs:element name="LDL" type="tns:HjemmeMonType"/>
+          <xs:element name="Triglycerid" type="tns:HjemmeMonType"/>
+          <xs:element name="UdfoertAf" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="BlodtrykType">
+        <xs:sequence>
+          <xs:element name="ID" type="xs:string"/>
+          <xs:element name="Dato" type="xs:dateTime"/>
+          <xs:element name="AnalyseID" type="xs:string"/>
+          <xs:element name="Systolisk" type="tns:HjemmeMonType"/>
+          <xs:element name="Diastolisk" type="tns:HjemmeMonType"/>
+          <xs:element name="UdfoertAf" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="LaegensUdredningType">
+        <xs:sequence>
+          <xs:element name="ID" type="xs:string"/>
+          <xs:element maxOccurs="unbounded" name="HenvisningsDiagnose" type="tns:HenvisningsDiagnoseType"/>
+          <xs:element minOccurs="0" name="OensketYdelse" type="tns:FormattedTextType"/>
+          <xs:element minOccurs="0" name="Anamnese" type="tns:FormattedTextType"/>
+          <xs:element name="UdfoertAf" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="MonitoreringOgMaalType">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="Spirometri" type="tns:SpirometriType"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="MRC" type="tns:StdHjemmeMonType"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="NYHA" type="tns:StdHjemmeMonType"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="Iltmaetning" type="tns:StdHjemmeMonType"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="INR" type="tns:StdHjemmeMonType"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="AntalExacerbationer" type="tns:StdHjemmeMonType"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="KlinikBT" type="tns:BlodtrykType"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="HjemmeBT" type="tns:BlodtrykType"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="Puls" type="tns:StdHjemmeMonType"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="HbA1C" type="tns:StdHjemmeMonType"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="Blodsukker" type="tns:StdHjemmeMonType"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="Kolesterol" type="tns:KolesterolType"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="Kost" type="tns:StdHjemmeMonType"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="Rygning" type="tns:RygningType"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="Vaegt" type="tns:StdHjemmeMonType"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="Livvidde" type="tns:StdHjemmeMonType"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="Hoejde" type="tns:StdHjemmeMonType"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="BMI" type="tns:StdHjemmeMonType"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="Skridttaeller" type="tns:StdHjemmeMonType"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="Motion" type="tns:StdHjemmeMonType"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="ProteinUri" type="tns:StdHjemmeMonType"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="OedemGrad" type="tns:StdHjemmeMonType"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="FosterAktivitet" type="tns:StdHjemmeMonType"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="RelevanteDiagnoserType">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="Diagnose" type="tns:DiagnoseType"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="SKLNoterType">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="Note" type="tns:NoteTypeType"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="AktuelMedicinType">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="Medicin" type="tns:MedicinType"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="KvalificeretDiagnoseType">
+        <xs:sequence>
+          <xs:element name="DiagnoseType" type="xs:string"/>
+          <xs:element name="DiagnoseKode" type="xs:string"/>
+          <xs:element minOccurs="0" name="DiagnoseBeskrivelse" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema elementFormDefault="unqualified" targetNamespace="http://kroniker.service.kihdb.silverbullet.dk/" version="1.0" xmlns:ns1="urn:oio:medcom:chronic-dataset:1.0.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="urn:oio:medcom:chronic-dataset:1.0.0"/>
+      <xs:element name="GetChronicDataset" type="tns:GetChronicDataset"/>
+      <xs:element name="GetChronicDatasetResponse" type="tns:GetChronicDatasetResponse"/>
+      <xs:element name="UploadChronicDataset" type="tns:UploadChronicDataset"/>
+      <xs:element name="UploadChronicDatasetResponse" type="tns:UploadChronicDatasetResponse"/>
+      <xs:complexType name="GetChronicDataset">
+        <xs:sequence>
+          <xs:element minOccurs="0" ref="ns1:GetChronicDatasetRequestMessage"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GetChronicDatasetResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" ref="ns1:GetChronicDatasetResponseMessage"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="UploadChronicDataset">
+        <xs:sequence>
+          <xs:element minOccurs="0" ref="ns1:UploadChronicDatasetRequestMessage"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="UploadChronicDatasetResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" ref="ns1:UploadChronicDatasetResponseMessage"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="GetChronicDataset">
+    <wsdl:part element="tns:GetChronicDataset" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UploadChronicDataset">
+    <wsdl:part element="tns:UploadChronicDataset" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="HardFaultMessage">
+    <wsdl:part element="ns1:HardFaultDetailMessage" name="HardFaultMessage"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SoftFaultMessage">
+    <wsdl:part element="ns1:SoftFaultDetailMessage" name="SoftFaultMessage"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UploadChronicDatasetResponse">
+    <wsdl:part element="tns:UploadChronicDatasetResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetChronicDatasetResponse">
+    <wsdl:part element="tns:GetChronicDatasetResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="ChronicDatasetService">
+    <wsdl:operation name="GetChronicDataset">
+      <wsdl:input message="tns:GetChronicDataset" name="GetChronicDataset"></wsdl:input>
+      <wsdl:output message="tns:GetChronicDatasetResponse" name="GetChronicDatasetResponse"></wsdl:output>
+      <wsdl:fault message="tns:HardFaultMessage" name="HardFaultMessage"></wsdl:fault>
+      <wsdl:fault message="tns:SoftFaultMessage" name="SoftFaultMessage"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UploadChronicDataset">
+      <wsdl:input message="tns:UploadChronicDataset" name="UploadChronicDataset"></wsdl:input>
+      <wsdl:output message="tns:UploadChronicDatasetResponse" name="UploadChronicDatasetResponse"></wsdl:output>
+      <wsdl:fault message="tns:HardFaultMessage" name="HardFaultMessage"></wsdl:fault>
+      <wsdl:fault message="tns:SoftFaultMessage" name="SoftFaultMessage"></wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ChronicDatasetServiceServiceSoapBinding" type="tns:ChronicDatasetService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetChronicDataset">
+      <soap:operation soapAction="GetChronicDataset" style="document"/>
+      <wsdl:input name="GetChronicDataset">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetChronicDatasetResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="HardFaultMessage">
+        <soap:fault name="HardFaultMessage" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="SoftFaultMessage">
+        <soap:fault name="SoftFaultMessage" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UploadChronicDataset">
+      <soap:operation soapAction="UploadChronicDataset" style="document"/>
+      <wsdl:input name="UploadChronicDataset">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="UploadChronicDatasetResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="HardFaultMessage">
+        <soap:fault name="HardFaultMessage" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="SoftFaultMessage">
+        <soap:fault name="SoftFaultMessage" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ChronicDatasetServiceService">
+    <wsdl:port binding="tns:ChronicDatasetServiceServiceSoapBinding" name="ChronicDatasetServicePort">
+      <soap:address location="http://localhost:8080/kih_database/services/chronicDataset"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8080/kih_database/services/chronicDataset</con:endpoint></con:endpoints><con:operation isOneWay="false" action="GetChronicDataset" name="GetChronicDataset" bindingOperationName="GetChronicDataset" type="Request-Response" outputName="GetChronicDatasetResponse" inputName="GetChronicDataset" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/kih_database/services/chronicDataset</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:kron="http://kroniker.service.kihdb.silverbullet.dk/" xmlns:urn="urn:oio:medcom:chronic-dataset:1.0.0">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <kron:GetChronicDataset>
+         <!--Optional:-->
+         <urn:GetChronicDatasetRequestMessage>
+            <urn:CivilRegistrationNumber>1234567890</urn:CivilRegistrationNumber>
+         </urn:GetChronicDatasetRequestMessage>
+      </kron:GetChronicDataset>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="GetChronicDataset"/><con:wsrmConfig version="1.2"/></con:call><con:call name="Request 2"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/kih_database/services/chronicDataset</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:kron="http://kroniker.service.kihdb.silverbullet.dk/" xmlns:urn="urn:oio:medcom:chronic-dataset:1.0.0">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <kron:GetChronicDataset>
+         <!--Optional:-->
+         <urn:GetChronicDatasetRequestMessage>
+            <urn:CivilRegistrationNumber>?</urn:CivilRegistrationNumber>
+            <!--Optional:-->
+            <urn:Since>?</urn:Since>
+            <!--Optional:-->
+            <urn:MaximumReturnedMonitoreringOgMaal>?</urn:MaximumReturnedMonitoreringOgMaal>
+            <!--Optional:-->
+            <urn:DataSegmentList>
+               <!--Zero or more repetitions:-->
+               <urn:DataSegment>?</urn:DataSegment>
+            </urn:DataSegmentList>
+         </urn:GetChronicDatasetRequestMessage>
+      </kron:GetChronicDataset>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="GetChronicDataset"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="UploadChronicDataset" name="UploadChronicDataset" bindingOperationName="UploadChronicDataset" type="Request-Response" outputName="UploadChronicDatasetResponse" inputName="UploadChronicDataset" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Spirometri test message"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/kih_database/services/chronicDataset</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:kron="http://kroniker.service.kihdb.silverbullet.dk/" xmlns:urn="urn:oio:medcom:chronic-dataset:1.0.0" xmlns:ns="http://rep.oio.dk/medcom.dk/xml/schemas/2011/06/20/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <kron:UploadChronicDataset>
+         <!--Optional:-->
+         <urn:UploadChronicDatasetRequestMessage>
+            <ns:MedComKD>
+               <ns:Borger>
+                  <ns:CPR>1122334455</ns:CPR>
+               </ns:Borger>
+               <ns:MonitoreringOgMaal>
+                  <!--Zero or more repetitions:-->
+                  <ns:Spirometri>
+                     <ns:ID>1</ns:ID>
+                     <ns:Dato>2010-11-28T12:33:00</ns:Dato>
+                     <ns:AnalyseID>fisk</ns:AnalyseID>
+                     <ns:FEV1>
+                        <ns:IUPAC>test</ns:IUPAC>
+                        <ns:Analyse>test</ns:Analyse>
+                        <ns:Resultat>2</ns:Resultat>
+                        <ns:Enhed>kg</ns:Enhed>
+                        <!--Optional:-->
+                        <ns:Min>1</ns:Min>
+                        <!--Optional:-->
+                        <ns:Max>10</ns:Max>
+                        <!--Optional:-->
+                        <ns:Abnorm>20</ns:Abnorm>
+                        <!--Optional:-->
+                        <ns:PatientensMaal>20,1</ns:PatientensMaal>
+                     </ns:FEV1>
+                     <ns:FVC>
+                        <ns:IUPAC>test</ns:IUPAC>
+                        <ns:Analyse>test</ns:Analyse>
+                        <ns:Resultat>2</ns:Resultat>
+                        <ns:Enhed>kg</ns:Enhed>
+                        <!--Optional:-->
+                        <ns:Min>1</ns:Min>
+                        <!--Optional:-->
+                        <ns:Max>10</ns:Max>
+                        <!--Optional:-->
+                        <ns:Abnorm>20</ns:Abnorm>
+                        <!--Optional:-->
+                        <ns:PatientensMaal>20,1</ns:PatientensMaal>
+                     </ns:FVC>
+                     <ns:FEV1FVCRatio>
+                        <ns:IUPAC>test</ns:IUPAC>
+                        <ns:Analyse>test</ns:Analyse>
+                        <ns:Resultat>2</ns:Resultat>
+                        <ns:Enhed>kg</ns:Enhed>
+                        <!--Optional:-->
+                        <ns:Min>1</ns:Min>
+                        <!--Optional:-->
+                        <ns:Max>10</ns:Max>
+                        <!--Optional:-->
+                        <ns:Abnorm>20</ns:Abnorm>
+                        <!--Optional:-->
+                        <ns:PatientensMaal>20,1</ns:PatientensMaal>
+                     </ns:FEV1FVCRatio>
+                     <ns:FEV1Pct>
+                        <ns:IUPAC>test</ns:IUPAC>
+                        <ns:Analyse>test</ns:Analyse>
+                        <ns:Resultat>2</ns:Resultat>
+                        <ns:Enhed>kg</ns:Enhed>
+                        <!--Optional:-->
+                        <ns:Min>1</ns:Min>
+                        <!--Optional:-->
+                        <ns:Max>10</ns:Max>
+                        <!--Optional:-->
+                        <ns:Abnorm>20</ns:Abnorm>
+                        <!--Optional:-->
+                        <ns:PatientensMaal>20,1</ns:PatientensMaal>
+                     </ns:FEV1Pct>
+                     <ns:UdfoertAf>svend</ns:UdfoertAf>
+                  </ns:Spirometri>
+                  <ns:Spirometri>
+                     <ns:ID>1</ns:ID>
+                     <ns:Dato>2010-11-28T12:33:00</ns:Dato>
+                     <ns:AnalyseID>fisk</ns:AnalyseID>
+                     <ns:FEV1>
+                        <ns:IUPAC>test</ns:IUPAC>
+                        <ns:Analyse>test</ns:Analyse>
+                        <ns:Resultat>2</ns:Resultat>
+                        <ns:Enhed>kg</ns:Enhed>
+                        <!--Optional:-->
+                        <ns:Min>1</ns:Min>
+                        <!--Optional:-->
+                        <ns:Max>10</ns:Max>
+                        <!--Optional:-->
+                        <ns:Abnorm>20</ns:Abnorm>
+                        <!--Optional:-->
+                        <ns:PatientensMaal>20,1</ns:PatientensMaal>
+                     </ns:FEV1>
+                     <ns:FVC>
+                        <ns:IUPAC>test</ns:IUPAC>
+                        <ns:Analyse>test</ns:Analyse>
+                        <ns:Resultat>2</ns:Resultat>
+                        <ns:Enhed>kg</ns:Enhed>
+                        <!--Optional:-->
+                        <ns:Min>1</ns:Min>
+                        <!--Optional:-->
+                        <ns:Max>10</ns:Max>
+                        <!--Optional:-->
+                        <ns:Abnorm>20</ns:Abnorm>
+                        <!--Optional:-->
+                        <ns:PatientensMaal>20,1</ns:PatientensMaal>
+                     </ns:FVC>
+                     <ns:FEV1FVCRatio>
+                        <ns:IUPAC>test</ns:IUPAC>
+                        <ns:Analyse>test</ns:Analyse>
+                        <ns:Resultat>2</ns:Resultat>
+                        <ns:Enhed>kg</ns:Enhed>
+                        <!--Optional:-->
+                        <ns:Min>1</ns:Min>
+                        <!--Optional:-->
+                        <ns:Max>10</ns:Max>
+                        <!--Optional:-->
+                        <ns:Abnorm>20</ns:Abnorm>
+                        <!--Optional:-->
+                        <ns:PatientensMaal>20,1</ns:PatientensMaal>
+                     </ns:FEV1FVCRatio>
+                     <ns:FEV1Pct>
+                        <ns:IUPAC>test</ns:IUPAC>
+                        <ns:Analyse>test</ns:Analyse>
+                        <ns:Resultat>2</ns:Resultat>
+                        <ns:Enhed>kg</ns:Enhed>
+                        <!--Optional:-->
+                        <ns:Min>1</ns:Min>
+                        <!--Optional:-->
+                        <ns:Max>10</ns:Max>
+                        <!--Optional:-->
+                        <ns:Abnorm>20</ns:Abnorm>
+                        <!--Optional:-->
+                        <ns:PatientensMaal>20,1</ns:PatientensMaal>
+                     </ns:FEV1Pct>
+                     <ns:UdfoertAf>svend</ns:UdfoertAf>
+                  </ns:Spirometri>
+                  <ns:Spirometri>
+                     <ns:ID>1</ns:ID>
+                     <ns:Dato>2010-11-28T12:33:00</ns:Dato>
+                     <ns:AnalyseID>fisk</ns:AnalyseID>
+                     <ns:FEV1>
+                        <ns:IUPAC>test</ns:IUPAC>
+                        <ns:Analyse>test</ns:Analyse>
+                        <ns:Resultat>2</ns:Resultat>
+                        <ns:Enhed>kg</ns:Enhed>
+                        <!--Optional:-->
+                        <ns:Min>1</ns:Min>
+                        <!--Optional:-->
+                        <ns:Max>10</ns:Max>
+                        <!--Optional:-->
+                        <ns:Abnorm>20</ns:Abnorm>
+                        <!--Optional:-->
+                        <ns:PatientensMaal>20,1</ns:PatientensMaal>
+                     </ns:FEV1>
+                     <ns:FVC>
+                        <ns:IUPAC>test</ns:IUPAC>
+                        <ns:Analyse>test</ns:Analyse>
+                        <ns:Resultat>2</ns:Resultat>
+                        <ns:Enhed>kg</ns:Enhed>
+                        <!--Optional:-->
+                        <ns:Min>1</ns:Min>
+                        <!--Optional:-->
+                        <ns:Max>10</ns:Max>
+                        <!--Optional:-->
+                        <ns:Abnorm>20</ns:Abnorm>
+                        <!--Optional:-->
+                        <ns:PatientensMaal>20,1</ns:PatientensMaal>
+                     </ns:FVC>
+                     <ns:FEV1FVCRatio>
+                        <ns:IUPAC>test</ns:IUPAC>
+                        <ns:Analyse>test</ns:Analyse>
+                        <ns:Resultat>2</ns:Resultat>
+                        <ns:Enhed>kg</ns:Enhed>
+                        <!--Optional:-->
+                        <ns:Min>1</ns:Min>
+                        <!--Optional:-->
+                        <ns:Max>10</ns:Max>
+                        <!--Optional:-->
+                        <ns:Abnorm>20</ns:Abnorm>
+                        <!--Optional:-->
+                        <ns:PatientensMaal>20,1</ns:PatientensMaal>
+                     </ns:FEV1FVCRatio>
+                     <ns:FEV1Pct>
+                        <ns:IUPAC>test</ns:IUPAC>
+                        <ns:Analyse>test</ns:Analyse>
+                        <ns:Resultat>2</ns:Resultat>
+                        <ns:Enhed>kg</ns:Enhed>
+                        <!--Optional:-->
+                        <ns:Min>1</ns:Min>
+                        <!--Optional:-->
+                        <ns:Max>10</ns:Max>
+                        <!--Optional:-->
+                        <ns:Abnorm>20</ns:Abnorm>
+                        <!--Optional:-->
+                        <ns:PatientensMaal>20,1</ns:PatientensMaal>
+                     </ns:FEV1Pct>
+                     <ns:UdfoertAf>svend</ns:UdfoertAf>
+                  </ns:Spirometri>
+                  <ns:Spirometri>
+                     <ns:ID>1</ns:ID>
+                     <ns:Dato>2010-11-28T12:33:00</ns:Dato>
+                     <ns:AnalyseID>fisk</ns:AnalyseID>
+                     <ns:FEV1>
+                        <ns:IUPAC>test</ns:IUPAC>
+                        <ns:Analyse>test</ns:Analyse>
+                        <ns:Resultat>2</ns:Resultat>
+                        <ns:Enhed>kg</ns:Enhed>
+                        <!--Optional:-->
+                        <ns:Min>1</ns:Min>
+                        <!--Optional:-->
+                        <ns:Max>10</ns:Max>
+                        <!--Optional:-->
+                        <ns:Abnorm>20</ns:Abnorm>
+                        <!--Optional:-->
+                        <ns:PatientensMaal>20,1</ns:PatientensMaal>
+                     </ns:FEV1>
+                     <ns:FVC>
+                        <ns:IUPAC>test</ns:IUPAC>
+                        <ns:Analyse>test</ns:Analyse>
+                        <ns:Resultat>2</ns:Resultat>
+                        <ns:Enhed>kg</ns:Enhed>
+                        <!--Optional:-->
+                        <ns:Min>1</ns:Min>
+                        <!--Optional:-->
+                        <ns:Max>10</ns:Max>
+                        <!--Optional:-->
+                        <ns:Abnorm>20</ns:Abnorm>
+                        <!--Optional:-->
+                        <ns:PatientensMaal>20,1</ns:PatientensMaal>
+                     </ns:FVC>
+                     <ns:FEV1FVCRatio>
+                        <ns:IUPAC>test</ns:IUPAC>
+                        <ns:Analyse>test</ns:Analyse>
+                        <ns:Resultat>2</ns:Resultat>
+                        <ns:Enhed>kg</ns:Enhed>
+                        <!--Optional:-->
+                        <ns:Min>1</ns:Min>
+                        <!--Optional:-->
+                        <ns:Max>10</ns:Max>
+                        <!--Optional:-->
+                        <ns:Abnorm>20</ns:Abnorm>
+                        <!--Optional:-->
+                        <ns:PatientensMaal>20,1</ns:PatientensMaal>
+                     </ns:FEV1FVCRatio>
+                     <ns:FEV1Pct>
+                        <ns:IUPAC>test</ns:IUPAC>
+                        <ns:Analyse>test</ns:Analyse>
+                        <ns:Resultat>2</ns:Resultat>
+                        <ns:Enhed>kg</ns:Enhed>
+                        <!--Optional:-->
+                        <ns:Min>1</ns:Min>
+                        <!--Optional:-->
+                        <ns:Max>10</ns:Max>
+                        <!--Optional:-->
+                        <ns:Abnorm>20</ns:Abnorm>
+                        <!--Optional:-->
+                        <ns:PatientensMaal>20,1</ns:PatientensMaal>
+                     </ns:FEV1Pct>
+                     <ns:UdfoertAf>svend</ns:UdfoertAf>
+                  </ns:Spirometri>
+               </ns:MonitoreringOgMaal>
+            </ns:MedComKD>
+         </urn:UploadChronicDatasetRequestMessage>
+      </kron:UploadChronicDataset>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="UploadChronicDataset"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:sensitiveInformation/></con:soapui-project>

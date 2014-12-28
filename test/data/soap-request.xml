@@ -1,0 +1,5 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:kron="http://kroniker.service.kihdb.silverbullet.dk/" xmlns:urn="urn:oio:medcom:chronic-dataset:1.0.0" xmlns:ns="http://rep.oio.dk/medcom.dk/xml/schemas/2011/06/20/">
+    <soapenv:Header/>
+    <soapenv:Body>
+    </soapenv:Body>
+</soapenv:Envelope>

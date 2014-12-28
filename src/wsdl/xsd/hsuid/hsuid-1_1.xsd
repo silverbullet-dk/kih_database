@@ -1,0 +1,591 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmltag" xmlns="http://www.w3.org/1999/xhtml" lang="da" xml:lang="da">
+    <head><title>
+	National Sundheds-it - Statens Serum Institut
+</title>
+        <!-- Server: SSICD01 -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Language" content="DA" />
+        <meta name="language" content="DA" />
+        <meta name="description" content="Sektor for National Sundheds-it er statslig myndighed med ansvar for at fasts&#230;tte nationale standarder og fremme en sammenh&#230;ngende arkitektur for IT-anvendelsen i sundhedsv&#230;senet. Sektoren forest&#229;r endvidere at udvikle prioriterede IT-systemer og sikre en effektiv forvaltning af den statslige IT-portef&#248;lje p&#229; omr&#229;det." />
+        <meta name="keywords" content="National Sundheds-it, NSI, godkendte standarder, standardisering, referencearkitektur, NSP, National Serviceplatform, FMK, F&#230;lles Medicinkort, DDV, vaccinationsregister, vaccinationsregistret, Terminologi, Klassifikationer, epSOS," />
+        <meta name="date" content="2013-06-06" />
+        <meta name="created" content="2012-02-21" />
+        <meta name="modified" content="2013-06-06" />
+        <meta name="group" content="National Sundheds-it" />
+<link href="/css/www/common.css" rel="stylesheet" type="text/css" media="all" /><link href="/css/www/content.css" rel="stylesheet" type="text/css" media="all" /><link href="/css/www/design.css" rel="stylesheet" type="text/css" media="all" /><link href="/css/www/designforscreen.css" rel="stylesheet" type="text/css" media="all" /><link href="/css/www/menus.css" rel="stylesheet" type="text/css" media="all" /><link href="/css/www/search.css" rel="stylesheet" type="text/css" media="all" /><link href="/css/www/boxcontent.css" rel="stylesheet" type="text/css" media="all" /><link href="/css/www/carousel.css" rel="stylesheet" type="text/css" media="all" /><link href="/css/www/surveillance.css" rel="stylesheet" type="text/css" media="all" /><link href="/css/www/form6.css" rel="stylesheet" type="text/css" media="all" /><link href="/css/www/lightbox.css" rel="stylesheet" type="text/css" media="all" /><link href="/css/www/hrdata.css" rel="stylesheet" type="text/css" media="all" /><link href="/css/www/wffm.css" rel="stylesheet" type="text/css" media="all" /><link rel="stylesheet" type="text/css" href="/js/www/fancybox/jquery.fancybox-1.3.1.css" media="screen" /><link type="text/css" href="/css/www/jquery.ui.all.css" rel="stylesheet" /><link href="/js/www/jq-autocomplete/jquery.autocomplete.css" rel="stylesheet" type="text/css" /><link href="/css/www/themecss.ashx?themeid=E1CF77AF2ED448C5BB18C2A1A6FD85B3" rel="stylesheet" type="text/css" media="all" />
+        <!--[if IE]>
+        <link href="/css/www/ie.css" rel="stylesheet" type="text/css" media="all" />
+        <![endif]-->
+        <!--[if lt IE 8]>
+        <link href="/css/www/ie6-7.css" rel="stylesheet" type="text/css" media="all" />
+        <![endif]-->
+        <!--[if lt IE 7]>
+        <link href="/css/www/ie6.css" rel="stylesheet" type="text/css" media="all" />
+        <![endif]-->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            jQuery.noConflict();
+        </script>
+        
+            
+            <script type="text/javascript" src="/js/www/carousel.js"></script>
+            <script type="text/javascript" src="/js/www/jquery.corner.js"></script>
+        
+        <script type="text/javascript" src="/js/www/fancybox/jquery.fancybox-1.3.1.js"></script>
+        <script type="text/javascript" src="/js/www/ssi.js"></script>
+        <script type="text/javascript" src="/js/www/ssiforscreen.js"></script>
+        <script type="text/javascript" src="/js/www/extensions.js"></script>
+
+        <!--[if lt IE 7]>
+        <script type="text/javascript" src="/js/www/DD_belatedPNG_0.0.8a-min.js"></script>
+        <script type="text/javascript">
+            DD_belatedPNG.fix('img, h2, a, input, span, .figurearea');
+            DD_belatedASHXPNG.fix('.pngfix');
+            jQuery(document).ready(function () {
+                DD_belatedPNG.fix('div');
+            });
+        </script>
+        <![endif]-->
+
+        
+
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-4068733-9']);
+            _gaq.push(['_setDomainName', 'none']);
+            _gaq.push(['_setAllowLinker', true]);
+            _gaq.push(['_trackPageview']);
+            (function () {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+<!-- defgo.net script begin -->
+<script type="text/javascript">
+<!--
+/*var popunder = false;
+var surveyOk = true;
+var loaded = false;
+document.write('<scr' + 'ipt type=\"text/javascript\" src=\"https://www.defgo.net/popup_ium/upload/popup1005149222_1.asp?&t=1&s=1\"></scr' + 'ipt>');
+function timeoutCall(time) {
+if (loaded && surveyOk) {
+PopUpWindow();
+if (popunder) {
+self.focus();
+}
+}
+else
+if (time < 10000) {
+setTimeout("timeoutCall(" + (time + 500) + ")", 500);
+}
+}
+timeoutCall(0);*/
+//-->
+</script>
+<!-- defgo.net script end -->
+
+
+    </head>
+    
+    <body>
+
+    	<!-- defgo.net DIV begin -->
+		<!--<div style="display:none" id="defgonetmessage" class="defgoDivTag"></div>-->
+    	<!-- defgo.net DIV end -->
+
+        <form method="post" action="/Sundhedsdataogit/National Sundheds-it.aspx" id="mainform">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE5Nzc3NDY1NDEPZBYCAgEPFgQeBGxhbmcFAmRhHgh4bWw6bGFuZwUCZGEWBAIBD2QWAgISDxYCHgRUZXh0BXw8bGluayBocmVmPSIvY3NzL3d3dy90aGVtZWNzcy5hc2h4P3RoZW1laWQ9RTFDRjc3QUYyRUQ0NDhDNUJCMThDMkExQTZGRDg1QjMiIHJlbD0ic3R5bGVzaGVldCIgdHlwZT0idGV4dC9jc3MiIG1lZGlhPSJhbGwiIC8+ZAIDEGRkFgYCAQ9kFgJmD2QWAmYPZBYCZg8PZBYCHgVzdHlsZQVPYmFja2dyb3VuZC1pbWFnZTogdXJsKC9+L21lZGlhL0FkbWluL1N1YnNpdGVMYXlvdXRzL3BldHJvbGV1bV9iYWNrZ3JvdW5kLmFzaHgpOxYCAgEPD2QWAh8DBUliYWNrZ3JvdW5kLWltYWdlOiB1cmwoL34vbWVkaWEvQWRtaW4vU3Vic2l0ZUxvZ29zL05TSV9sb2dvX2xvZHJldDIuYXNoeCk7ZAIDD2QWBGYPZBYCZg9kFgYCAQ8PFgYeC05hdmlnYXRlVXJsBQEvHgdUb29sVGlwBRBHw6UgdGlsIGZvcnNpZGVuHwIFWzxpbWcgc3JjPSIvfi9tZWRpYS9BZG1pbi9Mb2dvcy90b3Bsb2dvLmFzaHgiIGFsdD0iU3RhdGVucyBTZXJ1bSBJbnN0aXR1dCIgY2xhc3M9InBuZ2ZpeCIgLz5kZAIDD2QWAmYPZBYCAgEPFgIeC18hSXRlbUNvdW50AgUWDGYPZBYCZg8VAghsaW5rc2V0Mzs8YSBocmVmPSIvU2VydmljZS9Lb250YWt0LmFzcHgiIHRpdGxlPSJLb250YWt0Ij5Lb250YWt0PC9hPmQCAQ9kFgJmDxUCCGxpbmtzZXQzNzxhIGhyZWY9Ii9TZXJ2aWNlL09tU1NJLmFzcHgiIHRpdGxlPSJPbSBTU0kiPk9tIFNTSTwvYT5kAgIPZBYCZg8VAghsaW5rc2V0M008YSBocmVmPSIvU2VydmljZS9TZWx2YmV0amVuaW5nLmFzcHgiIHRpdGxlPSJTZWx2YmV0amVuaW5nIj5TZWx2YmV0amVuaW5nPC9hPmQCAw9kFgJmDxUCCGxpbmtzZXQzUzxhIGhyZWY9Ii9TZXJ2aWNlL1N5Z2RvbXNsZWtzaWtvbi5hc3B4IiB0aXRsZT0iU3lnZG9tc2xla3Npa29uIj5TeWdkb21zbGVrc2lrb248L2E+ZAIED2QWAmYPFQIIbGlua3NldDMzPGEgdGl0bGU9IkVuZ2xpc2giIGhyZWY9Ii9FbmdsaXNoLmFzcHgiPkVuZ2xpc2g8L2E+ZAIFD2QWAgIBDxYCHgdWaXNpYmxlaBYEAgEPZBYCZg8VAjovU3VuZGhlZHNkYXRhb2dpdC9OYXRpb25hbCBTdW5kaGVkcy1pdC5hc3B4P3Nob3dsb2dpbj10cnVlB0xvZyBpbmRkAgMPFgIfB2gWAmYPDxYEHwIFEkxvZyB1ZCAoQW5vbnltb3VzKR8FBRJMb2cgdWQgKEFub255bW91cylkZAIFDw8WBh4TU2VhcmNocmVzdWx0QWRkcmVzcwUOL1Jlc3VsdGF0LmFzcHgeEVNlYXJjaEJ1dHRvblRpdGxlBQRTw7hnHglXYXRlcm1hcmsFBFPDuGdkFgJmD2QWAgIBDw8WAh4ISW1hZ2VVcmwFJS9pbWFnZXMvd3d3L2J1dHRvbnMvc2VhcmNoYnV0dG9uMS5naWZkZAIBD2QWAmYPZBYCZg8WAh8GAgcWDgIBD2QWAmYPFQIeIGNsYXNzPSJsaW5rc2V0MSB0b3BtZW51Zmlyc3QiMzxhIGhyZWY9Ii9Ba3R1ZWx0LmFzcHgiIHRpdGxlPSJBa3R1ZWx0Ij5Ba3R1ZWx0PC9hPmQCAg9kFgJmDxUCESBjbGFzcz0ibGlua3NldDEiVDxhIGhyZWY9Ii9TdW5kaGVkc2RhdGFvZ2l0LmFzcHgiIHRpdGxlPSJTdW5kaGVkc2RhdGEgb2cgLWl0Ij5TdW5kaGVkc2RhdGEgb2cgLWl0PC9hPmQCAw9kFgJmDxUCESBjbGFzcz0ibGlua3NldDEiSzxhIGhyZWY9Ii9TbWl0dGViZXJlZHNrYWIuYXNweCIgdGl0bGU9IlNtaXR0ZWJlcmVkc2thYiI+U21pdHRlYmVyZWRza2FiPC9hPmQCBA9kFgJmDxUCESBjbGFzcz0ibGlua3NldDEiPDxhIGhyZWY9Ii9EaWFnbm9zdGlrLmFzcHgiIHRpdGxlPSJEaWFnbm9zdGlrIj5EaWFnbm9zdGlrPC9hPmQCBQ9kFgJmDxUCESBjbGFzcz0ibGlua3NldDEiPzxhIGhyZWY9Ii9WYWNjaW5hdGlvbi5hc3B4IiB0aXRsZT0iVmFjY2luYXRpb24iPlZhY2NpbmF0aW9uPC9hPmQCBg9kFgJmDxUCESBjbGFzcz0ibGlua3NldDEiOTxhIGhyZWY9Ii9Gb3Jza25pbmcuYXNweCIgdGl0bGU9IkZvcnNrbmluZyI+Rm9yc2tuaW5nPC9hPmQCBw9kFgJmDxUCHyBjbGFzcz0ibGlua3NldDEgdG9wbWVudWhpbGl0ZSI2PGEgaHJlZj0iL0Jlc3RpbC5hc3B4IiB0aXRsZT0iUHJvZHVrdGVyIj5Qcm9kdWt0ZXI8L2E+ZAIFD2QWBGYPZBYCZg9kFgJmDw8WBh4IQ3NzQ2xhc3MFFHN1Ym1lbnUgc3VibWVudXRyYW5zHgRfIVNCAgIfB2dkZAIDD2QWAmYPZBYEAgEPZBYCAgEPZBYEZg9kFgJmD2QWBGYPFgIfAgXCBQ0KDQogICAgICAgICAgICAgICAgICAgIDxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij4NCiAgICAgICAgICAgICAgICAgICAgICAgIGpRdWVyeShkb2N1bWVudCkucmVhZHkoZnVuY3Rpb24oKXsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBqUXVlcnkoJy5mbGlwZ2FkZ2V0JykuY2Fyb3VzZWwoew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBmbGlwRGVsYXk6IDgwMDAsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGJ1dHRvbkNvbnRhaW5lcjogJ2ZsaXBidXR0b25zJywNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgYnV0dG9uczogWydmbGlwQnV0dG9uXzEnLCdmbGlwQnV0dG9uXzInLCdmbGlwQnV0dG9uXzMnLCdmbGlwQnV0dG9uXzQnXSwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdGFiQ29udGFpbmVyOiAnZmxpcGNvbnRhaW5lcnMnLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB0YWJzOiBbJ2NvbnRhaW5lcl8xJywnY29udGFpbmVyXzInLCdjb250YWluZXJfMycsJ2NvbnRhaW5lcl80J10sDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHRhYklkOiAnY29udGFpbmVyXycNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICB9KTsNCiAgICAgICAgICAgICAgICAgICAgICAgIH0pOw0KICAgICAgICAgICAgICAgICAgICA8L3NjcmlwdD5kAgIPDxYEHwwFKWxpbmtjYXJvdXNlbCBjYXJvdXNlbG5hcnJvdyBib3R0b21tYXJnaW4xHw0CAmQWBAIBDxYCHwYCBBYIAgEPZBYGZg8VAgEx1gJkaXNwbGF5OiAgYmxvY2s7IGJhY2tncm91bmQtaW1hZ2U6IHVybCgvZ2VuaW1hZ2UuYXNoeD9pPVJtRnNjMlZmWDN4OFgxOW9kSFJ3T2k4dmQzZDNMbk56YVM1a2F5OV86XzJiTDIxbFpHbGhMMGx1WkdodmJHUXZSRXNnTFNCa1lXNXpheTlUZFc1a2FHVmtjMlJoZEdFZ2IyY2dhWFF2VG1GMGFXOXVZV3hUZFc1a2FHVmtjMGwwTDBKeVlXNWthVzVuSUdKcGJHeGxaR1Z5TDA1VFNTNWhjMmg0UDIxM1BUY3lPRjlmZkh4Zlh6SXhORGMwT0RNMk5EZGZYM3g4WDE4eU1UUTNORGd6TmpRM1gxOThmRjlmUm1Gc2MyVmZYM3g4WDE5VWNuVmxYMTk4ZkY5ZlZISjFaVjlmZkh4Zlh6UmZYM3g4WDE5ZlgzeDhYMTh3KTtkAgEPZBYCZg8VAlU8YSBocmVmPSIvU3VuZGhlZHNkYXRhb2dpdC9OYXRpb25hbCBTdW5kaGVkcy1pdC9PbSBOU0kuYXNweCI+TmF0aW9uYWwgU3VuZGhlZHMtaXQ8L2E+xAFOYXRpb25hbCBTdW5kaGVkcy1pdCAoTlNJKSBrb29yZGluZXJlciBpdC11bmRlcnN0w7h0dGVsc2VuIGFmIHN1bmRoZWRzdsOmc2VuZXQgb2cgdmFyZXRhZ2VyIGRyaWZ0IG9nIHVkdmlrbGluZyBhZiBzdW5kaGVkcy1pdC1zeXN0ZW1lcm5lIHVuZGVyIE1pbmlzdGVyaWV0IGZvciBTdW5kaGVkIG9nIEZvcmVieWdnZWxzZS4uPGJyIC8+PGJyIC8+ZAIDDw8WAh8HaGQWAgIBDw8WAh8HaGQWAgIDD2QWAgIBDw8WAh8HaGRkAgIPZBYGZg8VAgEy5AJkaXNwbGF5OiBub25lOyBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoL2dlbmltYWdlLmFzaHg/aT1SbUZzYzJWZlgzeDhYMTlvZEhSd09pOHZkM2QzTG5OemFTNWtheTlfOl8yYkwyMWxaR2xoTDBsdVpHaHZiR1F2UkVzZ0xTQmtZVzV6YXk5VGRXNWthR1ZrYzJSaGRHRWdiMmNnYVhRdlRtRjBhVzl1WVd4VGRXNWthR1ZrYzBsMEwwSnlZVzVrYVc1bklHSnBiR3hsWkdWeUwzTjBZVzVrWVhKa2FYTmxjbWx1Wnk1aGMyaDRQMjEzUFRjeU9GOWZmSHhmWHpJeE5EYzBPRE0yTkRkZlgzeDhYMTh5TVRRM05EZ3pOalEzWDE5OGZGOWZSbUZzYzJWZlgzeDhYMTlVY25WbFgxOThmRjlmVkhKMVpWOWZmSHhmWHpSZlgzeDhYMTlmWDN4OFgxOHcpO2QCAQ9kFgJmDxUCWTxhIGhyZWY9Ii9TdW5kaGVkc2RhdGFvZ2l0L05hdGlvbmFsIFN1bmRoZWRzLWl0L1N0YW5kYXJkaXNlcmluZy5hc3B4Ij5TdGFuZGFyZGlzZXJpbmc8L2E+9gFBbnZlbmRlbHNlIGFmIGbDpmxsZXMgcmVmZXJlbmNlYXJraXRla3R1cmVyIG9nIHN0YW5kYXJkZXIgaW5kZW4gZm9yIHN1bmRoZWRzLWl0IHNrYWwgdW5kZXJzdMO4dHRlIGt2YWxpdGV0IG9nIGVmZmVrdGl2aXRldCBpIHN1bmRoZWRzdsOmc2VuZXQgbWVkIHN0w7hycmUgc2FtbWVuaMOmbmcgaSBpdC1sw7hzbmluZ2VyIG9nIGtvbW11bmlrYXRpb24gbWVsbGVtIHBhcnRlcm5lIGkgc3VuZGhlZHN2w6ZzZW5ldC48YnIgLz48YnIgLz5kAgMPDxYCHwdoZBYCAgEPDxYCHwdoZBYCAgMPZBYCAgEPDxYCHwdoZGQCAw9kFgZmDxUCATP0AmRpc3BsYXk6IG5vbmU7IGJhY2tncm91bmQtaW1hZ2U6IHVybCgvZ2VuaW1hZ2UuYXNoeD9pPVJtRnNjMlZmWDN4OFgxOW9kSFJ3T2k4dmQzZDNMbk56YVM1a2F5OV86XzJiTDIxbFpHbGhMMGx1WkdodmJHUXZSRXNnTFNCa1lXNXpheTlUZFc1a2FHVmtjMlJoZEdFZ2IyY2dhWFF2VG1GMGFXOXVZV3hUZFc1a2FHVmtjMGwwTDBKeVlXNWthVzVuSUdKcGJHeGxaR1Z5TDJiRHBteHNaWE5mYldWa2FXTnBibXR2Y25RdVlYTm9lRDl0ZHowM01qaGZYM3g4WDE4eU1UUTNORGd6TmpRM1gxOThmRjlmTWpFME56UTRNelkwTjE5ZmZIeGZYMFpoYkhObFgxOThmRjlmVkhKMVpWOWZmSHhmWDFSeWRXVmZYM3g4WDE4MFgxOThmRjlmWDE5OGZGOWZNQV86XzNkXzpfM2QpO2QCAQ9kFgJmDxUCYTxhIGhyZWY9Ii9TdW5kaGVkc2RhdGFvZ2l0L05hdGlvbmFsIFN1bmRoZWRzLWl0L0ZhZWxsZXMgTWVkaWNpbmtvcnQuYXNweCI+RsOmbGxlcyBNZWRpY2lua29ydDwvYT6yAUbDpmxsZXMgTWVkaWNpbmtvcnQgZXIgZW4gbmF0aW9uYWwgc2VydmljZSwgZGVyIGdpdmVyIG11bGlnaGVkIGZvciwgYXQgYmVoYW5kbGVyZW4ga2FuIHNlIGFsbGUgcGF0aWVudGVucyBha3R1ZWxsZSBtZWRpY2lub3BseXNuaW5nZXIgdmlhIHNpbiBsb2thbGUgaXQtYXJiZWpkc3BsYWRzLiA8YnIgLz48YnIgLz5kAgMPDxYCHwdoZBYCAgEPDxYCHwdoZBYCAgMPZBYCAgEPDxYCHwdoZGQCBA9kFgZmDxUCATTsAmRpc3BsYXk6IG5vbmU7IGJhY2tncm91bmQtaW1hZ2U6IHVybCgvZ2VuaW1hZ2UuYXNoeD9pPVJtRnNjMlZmWDN4OFgxOW9kSFJ3T2k4dmQzZDNMbk56YVM1a2F5OV86XzJiTDIxbFpHbGhMMGx1WkdodmJHUXZSRXNnTFNCa1lXNXpheTlUZFc1a2FHVmtjMlJoZEdFZ2IyY2dhWFF2VG1GMGFXOXVZV3hUZFc1a2FHVmtjMGwwTDBKeVlXNWthVzVuSUdKcGJHeGxaR1Z5TDJWd2MyOXpYMkp5WVc1a2FXNW5MbUZ6YUhnXzpfMmZiWGM5TnpJNFgxOThmRjlmTWpFME56UTRNelkwTjE5ZmZIeGZYekl4TkRjME9ETTJORGRmWDN4OFgxOUdZV3h6WlY5ZmZIeGZYMVJ5ZFdWZlgzeDhYMTlVY25WbFgxOThmRjlmTkY5ZmZIeGZYMTlmZkh4Zlh6QV86XzNkKTtkAgEPZBYCZg8VAkU8YSBocmVmPSIvU3VuZGhlZHNkYXRhb2dpdC9OYXRpb25hbCBTdW5kaGVkcy1pdC9lcFNPUy5hc3B4Ij5lcFNPUzwvYT54ZXBTT1MgZXIgZXQgZXVyb3DDpmlzayBzdW5kaGVkcy1pdCBwcm9qZWt0LCBkZXIgc2thbCB1bmRlcnN0w7h0dGUgYm9yZ2VybmVzIGZyaSBiZXbDpmdlbGlnaGVkIGluZGVuIGZvciBFVS4gPGJyIC8+PGJyIC8+ZAIDDw8WAh8HaGQWAgIBDw8WAh8HaGQWAgIDD2QWAgIBDw8WAh8HaGRkAgUPFgIfBgIEFghmD2QWAmYPFQQBMQkgc2VsZWN0ZWQQIGZsaXBidXR0b25maXJzdHY8YSBocmVmPSIvU3VuZGhlZHNkYXRhb2dpdC9OYXRpb25hbCBTdW5kaGVkcy1pdC5hc3B4P2Nhcm91c2VsdGFiaWQ9MSIgdGl0bGU9Ik5TSSI+TlNJPC9hPkh2YWQgZXIgTmF0aW9uYWwgU3VuZGhlZHMtaXQ/ZAIBD2QWAmYPFQQBMgAAxAE8YSBocmVmPSIvU3VuZGhlZHNkYXRhb2dpdC9OYXRpb25hbCBTdW5kaGVkcy1pdC5hc3B4P2Nhcm91c2VsdGFiaWQ9MiIgdGl0bGU9IlN0YW5kYXJkaXNlcmluZyI+U3RhbmRhcmRpc2VyaW5nPC9hPk5TSSBoYXIgYW5zdmFyIGZvciBhdCBmYXN0c8OmdHRlIHN0YW5kYXJkZXIgb2cgZnJlbW1lIHNhbW1lbmjDpm5nZW5kZSBpdC1hcmtpdGVrdHVyZAICD2QWAmYPFQQBMwAArgE8YSBocmVmPSIvU3VuZGhlZHNkYXRhb2dpdC9OYXRpb25hbCBTdW5kaGVkcy1pdC5hc3B4P2Nhcm91c2VsdGFiaWQ9MyIgdGl0bGU9IkbDpmxsZXMgTWVkaWNpbmtvcnQiPkbDpmxsZXMgTWVkaWNpbmtvcnQ8L2E+R2l2ZXIgYWRnYW5nIHRpbCBkaW5lIGFrdHVlbGxlIG1lZGljaW5vcGx5c25pbmdlciAgICBkAgMPZBYCZg8VBAE0AAB+PGEgaHJlZj0iL1N1bmRoZWRzZGF0YW9naXQvTmF0aW9uYWwgU3VuZGhlZHMtaXQuYXNweD9jYXJvdXNlbHRhYmlkPTQiIHRpdGxlPSJlcFNPUyI+ZXBTT1M8L2E+RXQgZXVyb3DDpmlzayBzdW5kaGVkcy1pdCBwcm9qZWt0ZAIBD2QWAmYPZBYEZg9kFgJmDxUBAGQCAg9kFghmD2QWAgIBDxYCHwYC/////w9kAgEPZBYCAgEPFgIfBgL/////D2QCAg9kFgICAQ8WAh8GAgIWBGYPZBYEAgEPZBYCZg8VAqECL2dlbmltYWdlLmFzaHg/aT1SbUZzYzJWZlgzeDhYMTlvZEhSd09pOHZkM2QzTG5OemFTNWtheTlfOl8yYkwyMWxaR2xoTDBsdVpHaHZiR1F2UkVzZ0xTQmtZVzV6YXk5VGRXNWthR1ZrYzJSaGRHRWdiMmNnYVhRdlRtRjBhVzl1WVd4VGRXNWthR1ZrYzBsMEwwWnZjbk5wWkdWaWIydHpaUzlFUkZZek1ERXVZWE5vZUY5ZmZIeGZYekl4TkRjME9ETTJORGRmWDN4OFgxOHlNVFEzTkRnek5qUTNYMTk4ZkY5ZlJtRnNjMlZmWDN4OFgxOVVjblZsWDE5OGZGOWZWSEoxWlY5ZmZIeGZYelJmWDN4OFgxOWZYM3g4WDE4dyVERFYgLSBkZXQgZGFuc2tlIHZhY2NpbmF0aW9uc3JlZ2lzdGVyZAIIDxUBAGQCAQ9kFgQCAQ9kFgJmDxUCqQIvZ2VuaW1hZ2UuYXNoeD9pPVJtRnNjMlZmWDN4OFgxOW9kSFJ3T2k4dmQzZDNMbk56YVM1a2F5OV86XzJiTDIxbFpHbGhMMGx1WkdodmJHUXZSRXNnTFNCa1lXNXpheTlUZFc1a2FHVmtjMlJoZEdFZ2IyY2dhWFF2VG1GMGFXOXVZV3hUZFc1a2FHVmtjMGwwTDBadmNuTnBaR1ZpYjJ0elpTOTBaVzFoWDI1emNDNWhjMmg0WDE5OGZGOWZNakUwTnpRNE16WTBOMTlmZkh4Zlh6SXhORGMwT0RNMk5EZGZYM3g4WDE5R1lXeHpaVjlmZkh4ZlgxUnlkV1ZmWDN4OFgxOVVjblZsWDE5OGZGOWZORjlmZkh4ZlgxOWZmSHhmWHpBXzpfM2QZUGlnZSB1bmRlcnPDuGdlcyBhZiBsw6ZnZWQCCA8VASU8ZGl2IGNsYXNzPSJjbGVhcmJvdGgiPjxzcGFuIC8+PC9kaXY+ZAIDD2QWAgIBDxYCHwYC/////w9kAgMPZBYIZg9kFgJmD2QWBGYPDxYCHwdnZGQCAQ8VASsvU3VuZGhlZHNkYXRhb2dpdC9OYXRpb25hbCBTdW5kaGVkcy1pdC5hc3B4ZAIBD2QWAmYPZBYCZg8WAh8HaBYEZg8VAQlEb3dubG9hZHNkAgEPFgIfBgL/////D2QCAg9kFgJmD2QWAmYPDxYCHwdnZBYCAgEPFgIfAgUHS29udGFrdGQCAw9kFgJmD2QWAmYPFgIfBgIBFgJmD2QWAgIBDw8WBB8MBRhib3R0b21tYXJnaW4xIGNvbnRlbnRib3gfDQICFgIeBVN0eWxlBQ13aWR0aDogMjE2cHg7FgYCAw8PFgIfB2hkZAIEDxUBGCBjbGFzcz0iY29udGVudGJveHRpdGxlImQCBw8PFgQfDAURY29udGVudGJveGNvbnRlbnQfDQICZBYEAgUPFgIfBgL/////D2QCBw9kFgJmD2QWAmYPZBYCZg9kFgJmDxYCHwYCAxYGZg9kFgQCAQ8PFgQfBQU5RsOmbGxlcyBNZWRpY2lua29ydCDigJMgU2lra2VyaGVkIG9ta3JpbmcgYWRnYW5nIHRpbCBkYXRhHwQFSS9TdW5kaGVkc2RhdGFvZ2l0L05hdGlvbmFsIFN1bmRoZWRzLWl0L0FrdHVlbHQvMjAxMy8wOF9GTUtfc2lra2VyaGVkLmFzcHhkFgJmDxUBOUbDpmxsZXMgTWVkaWNpbmtvcnQg4oCTIFNpa2tlcmhlZCBvbWtyaW5nIGFkZ2FuZyB0aWwgZGF0YWQCAg8VAgoyNy0wOC0yMDEzQUZvcmFubGVkaWdldCBhZiBvbXRhbGUgaSBtZWRpZXJuZSBhZiBzaWtrZXJoZWRlbiBpIGRldCBGJiMyMzA7Li4uZAIBD2QWBAIBDw8WBB8FBUogTnkgdmVqbGVkbmluZyB0aWwgYmVrZW5kdGfDuHJlbHNlbiBvbSBpdC1zdGFuZGFyZGVyIHDDpSBzdW5kaGVkc29tcsOlZGV0IB8EBVAvU3VuZGhlZHNkYXRhb2dpdC9OYXRpb25hbCBTdW5kaGVkcy1pdC9Ba3R1ZWx0LzIwMTMvMDhfdmVqbGVkbmluZ1N0YW5kYXJkZXIuYXNweGQWAmYPFQExVmVqbGVkbmluZyB0aWwgYmVrZW5kdGfDuHJlbHNlbiBvbSBpdC1zdGFuZGFyZGVyIGQCAg8VAgowNS0wOC0yMDEzRkRldCBza2FsIHYmIzIzMDtyZSBsZXR0ZXJlIGZvciBzdW5kaGVkc3YmIzIzMDtzZW5ldHMgcGFydGVyIG9nIGxldmUuLi5kAgIPZBYEAgEPDxYEHwUFVVN0YW5kYXJkaXNlcmluZyBhZiBvcHNhbWxpbmcgYWYgaGVsYnJlZHNkYXRhIGhvcyBib3JnZXJlbiBpIHRlbGVtZWRpY2luc2tlIGzDuHNuaW5nZXIfBAVTL1N1bmRoZWRzZGF0YW9naXQvTmF0aW9uYWwgU3VuZGhlZHMtaXQvQWt0dWVsdC8yMDEzLzA3X09wc2FtbGluZ0FmSGVsYnJlZHNkYXRhLmFzcHhkFgJmDxUBVVN0YW5kYXJkaXNlcmluZyBhZiBvcHNhbWxpbmcgYWYgaGVsYnJlZHNkYXRhIGhvcyBib3JnZXJlbiBpIHRlbGVtZWRpY2luc2tlIGzDuHNuaW5nZXJkAgIPFQIKMDgtMDctMjAxM0FOYXRpb25hbCBzdW5kaGVkcy1pdCBoYXIgdWRhcmJlamRldCBlbiBmJiMyMzA7bGxlcyByYW1tZSBmb3Igby4uLmQYAgUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFInRvcF8wJHRvcF8wX3NlYXJjaGJveF9zZWFyY2hidXR0b24FJ291dGVyY29udGVudF8zJGNvbnRlbnRfMSRUZWFzZXJCb3hWaWV3cw8PZAICZJr70PMxqScamvgrJiBBcPDCF6pC" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['mainform'];
+if (!theForm) {
+    theForm = document.mainform;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=SENGI7b7ufvuLhqAPpe7mC96zdz1OzAzexyVAeY9XSzxYOjEhOA7ADUSyy7GKf0GJ2_OhiWcvErOCPhnC5S0W5zEwmw1&amp;t=634604461351482412" type="text/javascript"></script>
+
+<div>
+
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0" />
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0" />
+	<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+	<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKMz8GEBALAgJX+DQLggpqRApTg+qkvUQH7N+k8WGnyoqbNVEqv" />
+</div>
+        
+            <div id="global_0_ThemeBar" class="subsitethemebar" style="background-image: url(/~/media/Admin/SubsiteLayouts/petroleum_background.ashx);">
+	
+        <div id="global_0_logo" class="themelogoleft pngfix" style="background-image: url(/~/media/Admin/SubsiteLogos/NSI_logo_lodret2.ashx);">
+		<span />
+	</div>
+    
+</div>
+        
+            <div class="container relative">
+                
+
+<div class="identitybar relative">
+    <div class="identitybarlogo">
+        <a id="top_0_HomeLink" title="Gå til forsiden" href="/"><img src="/~/media/Admin/Logos/toplogo.ashx" alt="Statens Serum Institut" class="pngfix" /></a>
+    </div>
+    
+
+<ul class="servicemenu">
+
+    
+            <li class="linkset3">
+                <a href="/Service/Kontakt.aspx" title="Kontakt">Kontakt</a>
+            </li>
+        
+            <li class="linkset3">
+                <a href="/Service/OmSSI.aspx" title="Om SSI">Om SSI</a>
+            </li>
+        
+            <li class="linkset3">
+                <a href="/Service/Selvbetjening.aspx" title="Selvbetjening">Selvbetjening</a>
+            </li>
+        
+            <li class="linkset3">
+                <a href="/Service/Sygdomsleksikon.aspx" title="Sygdomsleksikon">Sygdomsleksikon</a>
+            </li>
+        
+            <li class="linkset3">
+                <a title="English" href="/English.aspx">English</a>
+            </li>
+        
+    
+            
+            
+    
+        
+
+</ul>            
+
+
+    <div class="mainsearchbox">
+        
+        <div id="top_0_top_0_searchbox_simplesearchbox" class="simplesearchbox" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'top_0_top_0_searchbox_searchbutton')">
+	<span class="searchforminputwrapper"><input name="top_0$top_0_searchbox_searchbox" type="text" value="Søg" id="top_0_top_0_searchbox_searchbox" class="searchforminput" /></span><input type="image" name="top_0$top_0_searchbox_searchbutton" id="top_0_top_0_searchbox_searchbutton" title="Søg" class="searchbutton" src="/images/www/buttons/searchbutton1.gif" alt="Søg" style="border-width:0px;" />
+</div>
+        
+        
+    </div>
+</div>
+
+
+<ul class="topmenu linkset2 linksetnoline"><li class="linkset1 topmenufirst"><a href="/Aktuelt.aspx" title="Aktuelt">Aktuelt</a></li><li class="linkset1"><a href="/Sundhedsdataogit.aspx" title="Sundhedsdata og -it">Sundhedsdata og -it</a></li><li class="linkset1"><a href="/Smitteberedskab.aspx" title="Smitteberedskab">Smitteberedskab</a></li><li class="linkset1"><a href="/Diagnostik.aspx" title="Diagnostik">Diagnostik</a></li><li class="linkset1"><a href="/Vaccination.aspx" title="Vaccination">Vaccination</a></li><li class="linkset1"><a href="/Forskning.aspx" title="Forskning">Forskning</a></li><li class="linkset1 topmenuhilite"><a href="/Bestil.aspx" title="Produkter">Produkter</a></li></ul>
+                <div id="outercontent_0_Submenu" class="submenu submenutrans">
+	<div class="submenucol">
+		<div class="linkset2">
+			<a href="/Sundhedsdataogit/National Sundheds-it/Om NSI.aspx" title="Om NSI">Om NSI</a>
+		</div><div class="linkset2">
+			<a href="/Sundhedsdataogit/National Sundheds-it/Aktuelt.aspx" title="Aktuelt">Aktuelt</a>
+		</div>
+	</div><div class="submenucol">
+		<div class="linkset2">
+			<a href="/Sundhedsdataogit/National Sundheds-it/Standardisering.aspx" title="Standardisering">Standardisering</a>
+		</div><div class="linkset2">
+			<a href="/Sundhedsdataogit/National Sundheds-it/TerminologiOgKlassifikationer.aspx" title="Terminologi og klassifikationer">Terminologi og klassifikationer</a>
+		</div>
+	</div><div class="submenucol">
+		<div class="linkset2">
+			<a href="/Sundhedsdataogit/National Sundheds-it/Faelles Medicinkort.aspx" title="F&#230;lles Medicinkort">F&#230;lles Medicinkort</a>
+		</div><div class="linkset2">
+			<a href="/Sundhedsdataogit/National Sundheds-it/DDV.aspx" title="Det Danske Vaccinationsregister">Det Danske Vaccinationsregister</a>
+		</div>
+	</div><div class="submenucol">
+		<div class="linkset2">
+			<a href="/Sundhedsdataogit/National Sundheds-it/NSP.aspx" title="National Serviceplatform">National Serviceplatform</a>
+		</div><div class="linkset2">
+			<a href="/Sundhedsdataogit/National Sundheds-it/epSOS.aspx" title="epSOS">epSOS</a>
+		</div>
+	</div><div class="submenucol">
+		<div class="linkset2">
+			<a href="/English/HealthdataandICT/The National eHealth Authority.aspx">NSI - in English</a>
+		</div>
+	</div><div class="clearboth"><span /></div>
+</div><div id="outercontent_1_Breadcrumb" class="breadcrumb linkset1">
+	<!-- Breadcrumb Start --><a title="Statens Serum Institut" class="breadcrumbseparator" href="/">Forside</a><a title="National Sundheds-it" href="/Sundhedsdataogit/National%20Sundheds-it.aspx">National Sundheds-it</a><!-- Breadcrumb End -->
+</div>
+<h1 class="hiddencontent">National Sundheds-it</h1>
+<div class="clearboth"><span /></div>
+
+<div class="gridbackground">
+
+    <div id="outercontent_3_Grid4Col3" class="grid4col3">
+	
+        
+        
+
+                    <script type="text/javascript">
+                        jQuery(document).ready(function(){
+                            jQuery('.flipgadget').carousel({
+                                flipDelay: 8000,
+                                buttonContainer: 'flipbuttons',
+                                buttons: ['flipButton_1','flipButton_2','flipButton_3','flipButton_4'],
+                                tabContainer: 'flipcontainers',
+                                tabs: ['container_1','container_2','container_3','container_4'],
+                                tabId: 'container_'
+                            });
+                        });
+                    </script>
+
+<div class="gridbackground">
+
+<div id="outercontent_3_content_0_CarouselBox" class="linkcarousel carouselnarrow bottommargin1">
+		
+    
+    <div class="flipcontainers">
+        
+            <div id="container_1" class="flipcontainer" style="display:  block; background-image: url(/genimage.ashx?i=RmFsc2VfX3x8X19odHRwOi8vd3d3LnNzaS5kay9_:_2bL21lZGlhL0luZGhvbGQvREsgLSBkYW5zay9TdW5kaGVkc2RhdGEgb2cgaXQvTmF0aW9uYWxTdW5kaGVkc0l0L0JyYW5kaW5nIGJpbGxlZGVyL05TSS5hc2h4P213PTcyOF9ffHxfXzIxNDc0ODM2NDdfX3x8X18yMTQ3NDgzNjQ3X198fF9fRmFsc2VfX3x8X19UcnVlX198fF9fVHJ1ZV9ffHxfXzRfX3x8X19fX3x8X18w);">
+        
+                
+                
+                    <div class="flipcontainerinner">
+                        <h2 class="linkset3 linksetnoline"><a href="/Sundhedsdataogit/National Sundheds-it/Om NSI.aspx">National Sundheds-it</a></h2>
+                        <p>National Sundheds-it (NSI) koordinerer it-understøttelsen af sundhedsvæsenet og varetager drift og udvikling af sundheds-it-systemerne under Ministeriet for Sundhed og Forebyggelse..<br /><br /><a href="/Sundhedsdataogit/National Sundheds-it/Om NSI.aspx">Læs mere om NSI</a></p>
+                    </div>
+                
+                
+                
+                
+                
+            </div>
+            
+        
+        
+            <div id="container_2" class="flipcontainer" style="display: none; background-image: url(/genimage.ashx?i=RmFsc2VfX3x8X19odHRwOi8vd3d3LnNzaS5kay9_:_2bL21lZGlhL0luZGhvbGQvREsgLSBkYW5zay9TdW5kaGVkc2RhdGEgb2cgaXQvTmF0aW9uYWxTdW5kaGVkc0l0L0JyYW5kaW5nIGJpbGxlZGVyL3N0YW5kYXJkaXNlcmluZy5hc2h4P213PTcyOF9ffHxfXzIxNDc0ODM2NDdfX3x8X18yMTQ3NDgzNjQ3X198fF9fRmFsc2VfX3x8X19UcnVlX198fF9fVHJ1ZV9ffHxfXzRfX3x8X19fX3x8X18w);">
+        
+                
+                
+                    <div class="flipcontainerinner">
+                        <h2 class="linkset3 linksetnoline"><a href="/Sundhedsdataogit/National Sundheds-it/Standardisering.aspx">Standardisering</a></h2>
+                        <p>Anvendelse af fælles referencearkitekturer og standarder inden for sundheds-it skal understøtte kvalitet og effektivitet i sundhedsvæsenet med større sammenhæng i it-løsninger og kommunikation mellem parterne i sundhedsvæsenet.<br /><br /><a href="/Sundhedsdataogit/National Sundheds-it/Standardisering.aspx">Læs mere om Standardisering</a></p>
+                    </div>
+                
+                
+                
+                
+                
+            </div>
+            
+        
+        
+            <div id="container_3" class="flipcontainer" style="display: none; background-image: url(/genimage.ashx?i=RmFsc2VfX3x8X19odHRwOi8vd3d3LnNzaS5kay9_:_2bL21lZGlhL0luZGhvbGQvREsgLSBkYW5zay9TdW5kaGVkc2RhdGEgb2cgaXQvTmF0aW9uYWxTdW5kaGVkc0l0L0JyYW5kaW5nIGJpbGxlZGVyL2bDpmxsZXNfbWVkaWNpbmtvcnQuYXNoeD9tdz03MjhfX3x8X18yMTQ3NDgzNjQ3X198fF9fMjE0NzQ4MzY0N19ffHxfX0ZhbHNlX198fF9fVHJ1ZV9ffHxfX1RydWVfX3x8X180X198fF9fX198fF9fMA_:_3d_:_3d);">
+        
+                
+                
+                    <div class="flipcontainerinner">
+                        <h2 class="linkset3 linksetnoline"><a href="/Sundhedsdataogit/National Sundheds-it/Faelles Medicinkort.aspx">Fælles Medicinkort</a></h2>
+                        <p>Fælles Medicinkort er en national service, der giver mulighed for, at behandleren kan se alle patientens aktuelle medicinoplysninger via sin lokale it-arbejdsplads. <br /><br /><a href="/Sundhedsdataogit/National Sundheds-it/Faelles Medicinkort.aspx">Læs mere om Fælles Medicinkort</a></p>
+                    </div>
+                
+                
+                
+                
+                
+            </div>
+            
+        
+        
+            <div id="container_4" class="flipcontainer" style="display: none; background-image: url(/genimage.ashx?i=RmFsc2VfX3x8X19odHRwOi8vd3d3LnNzaS5kay9_:_2bL21lZGlhL0luZGhvbGQvREsgLSBkYW5zay9TdW5kaGVkc2RhdGEgb2cgaXQvTmF0aW9uYWxTdW5kaGVkc0l0L0JyYW5kaW5nIGJpbGxlZGVyL2Vwc29zX2JyYW5kaW5nLmFzaHg_:_2fbXc9NzI4X198fF9fMjE0NzQ4MzY0N19ffHxfXzIxNDc0ODM2NDdfX3x8X19GYWxzZV9ffHxfX1RydWVfX3x8X19UcnVlX198fF9fNF9ffHxfX19ffHxfXzA_:_3d);">
+        
+                
+                
+                    <div class="flipcontainerinner">
+                        <h2 class="linkset3 linksetnoline"><a href="/Sundhedsdataogit/National Sundheds-it/epSOS.aspx">epSOS</a></h2>
+                        <p>epSOS er et europæisk sundheds-it projekt, der skal understøtte borgernes fri bevægelighed inden for EU. <br /><br /><a href="/Sundhedsdataogit/National Sundheds-it/epSOS.aspx">Læs mere om epSOS</a></p>
+                    </div>
+                
+                
+                
+                
+                
+            </div>
+            
+        </div>
+    
+    <div class="flipbuttons">
+    
+        
+        
+        
+                <div id="flipButton_1" class="flipbutton selected">
+                    <div class="flipbuttoninner flipbuttonfirst">
+                    
+                        <a href="/Sundhedsdataogit/National Sundheds-it.aspx?carouseltabid=1" title="NSI">NSI</a>Hvad er National Sundheds-it?
+
+                    </div>
+                </div>
+            
+                <div id="flipButton_2" class="flipbutton">
+                    <div class="flipbuttoninner">
+                    
+                        <a href="/Sundhedsdataogit/National Sundheds-it.aspx?carouseltabid=2" title="Standardisering">Standardisering</a>NSI har ansvar for at fastsætte standarder og fremme sammenhængende it-arkitektur
+
+                    </div>
+                </div>
+            
+                <div id="flipButton_3" class="flipbutton">
+                    <div class="flipbuttoninner">
+                    
+                        <a href="/Sundhedsdataogit/National Sundheds-it.aspx?carouseltabid=3" title="Fælles Medicinkort">Fælles Medicinkort</a>Giver adgang til dine aktuelle medicinoplysninger    
+
+                    </div>
+                </div>
+            
+                <div id="flipButton_4" class="flipbutton">
+                    <div class="flipbuttoninner">
+                    
+                        <a href="/Sundhedsdataogit/National Sundheds-it.aspx?carouseltabid=4" title="epSOS">epSOS</a>Et europæisk sundheds-it projekt
+
+                    </div>
+                </div>
+            
+        
+        
+    
+    </div>
+
+    <div class="clearboth"><span /></div>
+
+
+	</div>
+
+</div>
+
+    
+        
+            
+                <div class="subsitebox">
+                    
+                    <a href="/Sundhedsdataogit/National Sundheds-it/DDV.aspx">
+                        <img src="/genimage.ashx?i=RmFsc2VfX3x8X19odHRwOi8vd3d3LnNzaS5kay9_:_2bL21lZGlhL0luZGhvbGQvREsgLSBkYW5zay9TdW5kaGVkc2RhdGEgb2cgaXQvTmF0aW9uYWxTdW5kaGVkc0l0L0ZvcnNpZGVib2tzZS9ERFYzMDEuYXNoeF9ffHxfXzIxNDc0ODM2NDdfX3x8X18yMTQ3NDgzNjQ3X198fF9fRmFsc2VfX3x8X19UcnVlX198fF9fVHJ1ZV9ffHxfXzRfX3x8X19fX3x8X18w" alt="DDV - det danske vaccinationsregister" class="displayblock" />
+                        
+                    </a>
+                    <h2 class="linkset3 linksetnoline"><a href="/Sundhedsdataogit/National Sundheds-it/DDV.aspx">Det danske vaccinationsregister (DDV)</a></h2>
+                    <div class="subsiteboxcontent">
+                        I DDV kan læger og borgere se oplysninger om de vaccinationer, der er givet hos den praktiserende læge eller på private vaccinationskliniker siden 1996, og som er afregnet med sygesikringen. 
+                        <a class="displayblock" href="/Sundhedsdataogit/National Sundheds-it/DDV.aspx">Læs mere om DDV</a>
+                    </div>
+                
+                </div>
+                
+                
+            
+            
+            
+                <div class="subsitebox">
+                    
+                    <a href="/Sundhedsdataogit/National Sundheds-it/NSP.aspx">
+                        <img src="/genimage.ashx?i=RmFsc2VfX3x8X19odHRwOi8vd3d3LnNzaS5kay9_:_2bL21lZGlhL0luZGhvbGQvREsgLSBkYW5zay9TdW5kaGVkc2RhdGEgb2cgaXQvTmF0aW9uYWxTdW5kaGVkc0l0L0ZvcnNpZGVib2tzZS90ZW1hX25zcC5hc2h4X198fF9fMjE0NzQ4MzY0N19ffHxfXzIxNDc0ODM2NDdfX3x8X19GYWxzZV9ffHxfX1RydWVfX3x8X19UcnVlX198fF9fNF9ffHxfX19ffHxfXzA_:_3d" alt="Pige undersøges af læge" class="displayblock" />
+                        
+                    </a>
+                    <h2 class="linkset3 linksetnoline"><a href="/Sundhedsdataogit/National Sundheds-it/NSP.aspx">Den Nationale Service- platform (NSP)</a></h2>
+                    <div class="subsiteboxcontent">
+                        En simpel og effektiv adgang til nationale services som f.eks. Fælles Medicinkort for sundhedssektorens parter
+                        <a class="displayblock" href="/Sundhedsdataogit/National Sundheds-it/NSP.aspx">Læs mere om NSP</a>
+                    </div>
+                
+                </div>
+                
+                <div class="clearboth"><span /></div>
+            
+            
+    
+    
+        
+    
+</div>
+    
+    <div class="grid4col1">
+    
+        <div id="outercontent_3_right_0_SubsiteLogoPanel" class="bottommargin1 contentpadding1 subsitelogobox">
+	<div title="National Sundheds-it" class="subsitelogoboxinner pngfix" style="height: 54px;background-image: url(/~/media/Admin/SubsiteLogos/NSI_logo2.ashx?20121029T1501356200);">
+
+	</div>
+</div>
+
+<script type="text/javascript">
+
+    jQuery(document).ready(function () {
+        jQuery(".subsitelogobox").click(function () {
+            document.location = '/Sundhedsdataogit/National Sundheds-it.aspx';
+            return false;
+        });
+        jQuery(".subsitelogobox").keypress(function () {
+            if (event.keyCode == 13) onclick(); else return true;
+        })
+    });
+
+</script><div id="outercontent_3_right_2_ContactBox" class="bottommargin1 contentbox">
+	
+
+    <h2 class="contentboxtitle">Kontakt</h2>
+    <div class="contentboxcontent">
+        <p>Statens Serum Institut<br />
+Sektor for National Sundheds-it<br />
+Artillerivej 5<br />
+2300 K&oslash;benhavn S</p>
+<p>+45&nbsp;3268 3268<br />
+<script type="text/javascript">eval(unescape('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%22%6d%61%69%6c%74%6f%3a%6e%73%69%40%73%73%69%2e%64%6b%22%3e%6e%73%69%40%73%73%69%2e%64%6b%3c%2f%61%3e%27%29%3b'));</script></p>
+<p>EAN: 5798000362192<br />
+CVR: 46837428</p>
+        <div class="clearboth"><span /></div>
+    </div>
+    
+
+</div>
+        <div id="outercontent_3_right_3_ContentBoxRepeater_ctl00_ContentBox" class="bottommargin1 contentbox" style="width: 216px;">
+	
+            
+            
+            <h2 class="contentboxtitle">NSI nyheder</h2>
+
+            <div class="contentboxcontent">
+		
+                    
+                    <div class="clearboth"><span /></div>
+                
+                    
+     
+                    
+
+                    
+
+            <div class="boxlistitem">
+                <div class="boxlistitemlink linkset3"><a title="Fælles Medicinkort – Sikkerhed omkring adgang til data" href="/Sundhedsdataogit/National%20Sundheds-it/Aktuelt/2013/08_FMK_sikkerhed.aspx">Fælles Medicinkort – Sikkerhed omkring adgang til data</a></div>
+                <div>27-08-2013</div>
+                
+                <div>Foranlediget af omtale i medierne af sikkerheden i det F&#230;...</div>
+            </div>
+
+        
+
+            <div class="boxlistitem">
+                <div class="boxlistitemlink linkset3"><a title=" Ny vejledning til bekendtgørelsen om it-standarder på sundhedsområdet " href="/Sundhedsdataogit/National%20Sundheds-it/Aktuelt/2013/08_vejledningStandarder.aspx">Vejledning til bekendtgørelsen om it-standarder </a></div>
+                <div>05-08-2013</div>
+                
+                <div>Det skal v&#230;re lettere for sundhedsv&#230;senets parter og leve...</div>
+            </div>
+
+        
+
+            <div class="boxlistitem">
+                <div class="boxlistitemlink linkset3"><a title="Standardisering af opsamling af helbredsdata hos borgeren i telemedicinske løsninger" href="/Sundhedsdataogit/National%20Sundheds-it/Aktuelt/2013/07_OpsamlingAfHelbredsdata.aspx">Standardisering af opsamling af helbredsdata hos borgeren i telemedicinske løsninger</a></div>
+                <div>08-07-2013</div>
+                
+                <div>National sundheds-it har udarbejdet en f&#230;lles ramme for o...</div>
+            </div>
+
+        <p><a href="/Sundhedsdataogit/National Sundheds-it/Aktuelt.aspx" title="Aktuelt">Læs alle nyheder</a></p>
+
+            
+	</div>
+
+        
+</div>
+        
+    
+
+
+
+
+
+<div class="clearboth"><span /></div>
+
+        
+    </div>
+    
+    <div class="clearboth"><span /></div>
+
+    
+    
+</div>
+<div class="pagefooter">
+
+    <div class="pagefooterTopleft"><span /></div><div class="pagefooterToprepeat"><span /></div><div class="pagefooterTopright"><span /></div>
+    <div class="clearboth"><span /></div>
+    <div id="outercontent_4_AddressContent" class="pagefooterContent">
+	<p><strong>Statens Serum Institut</strong></p>
+<p>Artillerivej 5</p>
+<p>2300 Kbh S</p>
+<p>T&nbsp; 3268 3268</p>
+<p>F&nbsp; 3268 3868</p>
+<p>EAN 5798000362192</p>
+<p>E&nbsp; <script type="text/javascript">eval(unescape('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%22%6d%61%69%6c%74%6f%3a%73%65%72%75%6d%40%73%73%69%2e%64%6b%22%3e%73%65%72%75%6d%40%73%73%69%2e%64%6b%3c%2f%61%3e%27%29%3b'));</script></p>
+<hr />
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p><a href="/Service/OmSSI/Om hjemmesiden/Ansvarsfraskrivelse.aspx" style="color: #89959d;">Ansvarsfraskrivelse</a></p>
+<p><a href="/Service/OmSSI/Om hjemmesiden/Ophavsret.aspx" style="color: #89959d;">Ophavsret</a></p>
+<p><a href="/Service/OmSSI/Om hjemmesiden/Cookies.aspx" style="color: #89959d;">Cookies</a></p>
+<p><a href="/Service/OmSSI/Om hjemmesiden/Laes hoejt.aspx" style="color: #89959d;">L&aelig;s h&oslash;jt</a></p>
+<p><a href="/Service/OmSSI/Om hjemmesiden/Sitemap.aspx" style="color: #89959d;">Sitemap</a></p>
+</div>
+    <div class="clearboth"><span /></div>
+    <div class="pagefooterBottomleft"><span /></div><div class="pagefooterBottomrepeat"><span /></div><div class="pagefooterBottomright"><span /></div>
+    <div class="clearboth"><span /></div>
+
+</div>
+                <noscript><div class='mailspamsummarybox'><h2>E-mailadresser</h2><div>Du får denne besked fordi din browser ikke er sat op til at vise javascript.</div><div>Følgende emailadresser er angivet på denne side:</div></div><div class='mailspamsummaryitem'><a href="mailto:nsi(snabel-a)ssi.dk">nsi(snabel-a)ssi.dk</a> - erstat (snabel-a) med @</div><div class='mailspamsummaryitem'><a href="mailto:serum(snabel-a)ssi.dk">serum(snabel-a)ssi.dk</a> - erstat (snabel-a) med @</div></noscript>
+            </div>
+            
+            <div class="horizpageend"></div>
+        <!-- Body Start --><!-- Body End -->
+        
+
+<script type="text/javascript">
+//<![CDATA[
+
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+
+			var TextBoxClientBehavior = {
+				enable: function(options)
+				{
+					var input = document.getElementById(options.textBoxId);
+                    if(input == null) return;
+					if (options.watermark != null)
+					{
+						input.watermark = options.watermark;
+						input.onblur = function () {if(this.value=='')this.value=this.watermark;}        
+						input.onfocus = function () {if(this.value==this.watermark)this.value='';};
+					}
+				}
+			};TextBoxClientBehavior.enable({textBoxId: 'top_0_top_0_searchbox_searchbox', watermark: 'Søg'});//]]>
+</script>
+</form>
+        
+        <script type="text/javascript">
+        jQuery(function($) {
+            $('.contentbox,.subsitelogobox, ul.productlist li.productlistitem').corner("round 5px");
+        });
+
+        //Cufon.now();
+        </script>
+        
+    </body>
+    
+</html>
+
+

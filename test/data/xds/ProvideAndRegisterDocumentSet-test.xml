@@ -1,0 +1,498 @@
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope">
+    <!--The following header applies for a Synchronous Web Services Exchange Request
+        Please note that a soap message can only have one header section. -->
+    <!--
+  <s:Header>
+		<a:Action s:mustUnderstand="1">urn:ihe:iti:2007:ProvideAndRegisterDocumentSet-b</a:Action>
+		<a:MessageID>urn:uuid:6d296e90-e5dc-43d0-b455-7c1f3eb35d83</a:MessageID>
+		<a:ReplyTo>
+			<a:Address>http://www.w3.org/2005/08/addressing/anonymous</a:Address>
+		</a:ReplyTo>
+		<a:To s:mustUnderstand="1">http://localhost:2647/XdsService/IHEXDSRepository.svc</a:To>
+	</s:Header> -->
+    <!--The following DISABLED header applies for an Asynchronous Web Services Exchange Request
+        Please note that a soap message can only have one header section.
+    <s:Header>
+      <a:Action s:mustUnderstand="1">urn:ihe:iti:2008:ProvideAndRegisterDocumentSet-bAsync</a:Action>
+      <a:MessageID>urn:uuid:6d296e90-e5dc-43d0-b455-7c1f3eb35d83</a:MessageID>
+      <a:ReplyTo>
+        <a:Address>http://192.168.2.4:9080/XdsService/DocumentSourceReceiver.svc</a:Address>
+      </a:ReplyTo>
+      <a:To s:mustUnderstand="1">http://localhost:2647/XdsService/IHEXDSRepository.svc</a:To>
+    </s:Header> -->
+    <s:Body>
+        <ProvideAndRegisterDocumentSetRequest xmlns="urn:ihe:iti:xds-b:2007">
+            <SubmitObjectsRequest
+                    xmlns="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0">
+                <RegistryObjectList xmlns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0">
+                    <ObjectRef id="urn:uuid:a7058bb9-b4e4-4307-ba5b-e3f0ab85e12d"/>
+                    <ObjectRef id="urn:uuid:aa543740-bdda-424e-8c96-df4873be8500"/>
+                    <ObjectRef id="urn:uuid:96fdda7c-d067-4183-912e-bf5ee74998a8"/>
+                    <ObjectRef id="urn:uuid:554ac39e-e3fe-47fe-b233-965d2a147832"/>
+                    <ObjectRef id="urn:uuid:6b5aea1a-874d-4603-a4bc-96a0a7b38446"/>
+                    <ObjectRef id="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"/>
+                    <ObjectRef id="urn:uuid:93606bcf-9494-43ec-9b4e-a7748d1a838d"/>
+                    <ObjectRef id="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a"/>
+                    <ObjectRef id="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"/>
+                    <ObjectRef id="urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d"/>
+                    <ObjectRef id="urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1"/>
+                    <ObjectRef id="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead"/>
+                    <ObjectRef id="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983"/>
+                    <ObjectRef id="urn:uuid:a54d6aa5-d40d-43f9-88c5-b4633d873bdd"/>
+                    <ExtrinsicObject id="Doc0" objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"
+                                     mimeType="image/jpeg">
+                        <Slot name="creationTime">
+                            <ValueList>
+                                <Value>20130925</Value>
+                            </ValueList>
+                        </Slot>
+                        <Slot name="languageCode">
+                            <ValueList>
+                                <Value>en-us</Value>
+                            </ValueList>
+                        </Slot>
+                        <Slot name="serviceStartTime">
+                            <ValueList>
+                                <Value>20130925084025</Value>
+                            </ValueList>
+                        </Slot>
+                        <Slot name="serviceStopTime">
+                            <ValueList>
+                                <Value>20130925094025</Value>
+                            </ValueList>
+                        </Slot>
+                        <Slot name="sourcePatientId">
+                            <ValueList>
+                                <Value>244461503^^^&amp;1.3.6.1.4.1.21367.3000.1.6&amp;ISO</Value>
+                            </ValueList>
+                        </Slot>
+                        <Slot name="sourcePatientInfo">
+                            <ValueList>
+                                <Value>PID-3|pid1^^^domain</Value>
+                                <Value>PID-5|Doe^John^^^</Value>
+                                <Value>PID-7|19560527</Value>
+                                <Value>PID-8|M</Value>
+                                <Value>PID-11|100 Main St^^Metropolis^Il^44130^USA</Value>
+                            </ValueList>
+                        </Slot>
+                        <Name>
+                            <LocalizedString value="Lab"/>
+                        </Name>
+                        <Description/>
+                        <Classification id="6bf43daa-039c-490c-9dd5-f8ef27b43525"
+                                        classificationScheme="urn:uuid:93606bcf-9494-43ec-9b4e-a7748d1a838d"
+                                        classifiedObject="Doc0" nodeRepresentation="">
+                            <Slot name="authorPerson">
+                                <ValueList>
+                                    <Value>^Smitty^Gerald^^^Dr^MD</Value>
+                                </ValueList>
+                            </Slot>
+                            <Slot name="authorInstitution">
+                                <ValueList>
+                                    <Value>Cleveland Clinic</Value>
+                                    <Value>Parma Community</Value>
+                                </ValueList>
+                            </Slot>
+                            <Slot name="authorRole">
+                                <ValueList>
+                                    <Value>Attending</Value>
+                                </ValueList>
+                            </Slot>
+                            <Slot name="authorSpecialty">
+                                <ValueList>
+                                    <Value>Orthopedic</Value>
+                                </ValueList>
+                            </Slot>
+                        </Classification>
+                        <Classification id="570a56ad-cd38-4fb6-9668-41ec73dd3e05"
+                                        classificationScheme="urn:uuid:93606bcf-9494-43ec-9b4e-a7748d1a838d"
+                                        classifiedObject="Doc0" nodeRepresentation="">
+                            <Slot name="authorPerson">
+                                <ValueList>
+                                    <Value>^Dopplemeyer^Sherry^^^Dr^MD</Value>
+                                </ValueList>
+                            </Slot>
+                            <Slot name="authorInstitution">
+                                <ValueList>
+                                    <Value>Cleveland Clinic</Value>
+                                    <Value>Berea Community</Value>
+                                </ValueList>
+                            </Slot>
+                            <Slot name="authorRole">
+                                <ValueList>
+                                    <Value>Primary Surgon</Value>
+                                </ValueList>
+                            </Slot>
+                            <Slot name="authorSpecialty">
+                                <ValueList>
+                                    <Value>Orthopedic</Value>
+                                </ValueList>
+                            </Slot>
+                        </Classification>
+                        <Classification id="05fa6c7e-bb9d-4e0e-aab1-89abe2cf97e7"
+                                        classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a"
+                                        classifiedObject="Doc0" nodeRepresentation="Operative">
+                            <Slot name="codingScheme">
+                                <ValueList>
+                                    <Value>Connect-a-thon formatCodesclassCodes</Value>
+                                </ValueList>
+                            </Slot>
+                            <Name>
+                                <LocalizedString value="Operative"/>
+                            </Name>
+                        </Classification>
+                        <Classification id="b4c82b7a-43ac-4f56-9583-4c50e2be3036"
+                                        classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
+                                        classifiedObject="Doc0" nodeRepresentation="1.3.6.1.4.1.21367.2006.7.104">
+                            <Slot name="codingScheme">
+                                <ValueList>
+                                    <Value>Connect-a-thon formatCodesconfidentialityCodes</Value>
+                                </ValueList>
+                            </Slot>
+                            <Name>
+                                <LocalizedString value="Solar Drug Trial"/>
+                            </Name>
+                        </Classification>
+                        <Classification id="761b29ae-b297-4fe1-9f8d-1896a4a0de5f"
+                                        classificationScheme="urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d"
+                                        classifiedObject="Doc0" nodeRepresentation="CDAR2/IHE 1.0">
+                            <Slot name="codingScheme">
+                                <ValueList>
+                                    <Value>Connect-a-thon formatCodesformatCodes</Value>
+                                </ValueList>
+                            </Slot>
+                            <Name>
+                                <LocalizedString value="CDAR2/IHE 1.0"/>
+                            </Name>
+                        </Classification>
+                        <Classification id="1a86f190-3ac5-4fc2-b3d0-9a4d90a43290"
+                                        classificationScheme="urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1"
+                                        classifiedObject="Doc0" nodeRepresentation="Hospital Setting">
+                            <Slot name="codingScheme">
+                                <ValueList>
+                                    <Value>Connect-a-thon formatCodeshealthCareFacilityTypeCodes</Value>
+                                </ValueList>
+                            </Slot>
+                            <Name>
+                                <LocalizedString value="Hospital Setting"/>
+                            </Name>
+                        </Classification>
+                        <Classification id="7c49f566-8244-482d-bbeb-b32003d467e6"
+                                        classificationScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead"
+                                        classifiedObject="Doc0" nodeRepresentation="Laboratory">
+                            <Slot name="codingScheme">
+                                <ValueList>
+                                    <Value>Connect-a-thon formatCodespracticeSettingCodes</Value>
+                                </ValueList>
+                            </Slot>
+                            <Name>
+                                <LocalizedString value="Laboratory"/>
+                            </Name>
+                        </Classification>
+                        <Classification id="a0b3da5b-2948-4680-ab28-7ca692bb28d0"
+                                        classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983"
+                                        classifiedObject="Doc0" nodeRepresentation="Laboratory Report">
+                            <Slot name="codingScheme">
+                                <ValueList>
+                                    <Value>Connect-a-thon formatCodestypeCodes</Value>
+                                </ValueList>
+                            </Slot>
+                            <Name>
+                                <LocalizedString value="Laboratory Report"/>
+                            </Name>
+                        </Classification>
+                        <ExternalIdentifier id="57e212e3-0127-4710-a502-2879e694e98e"
+                                            identificationScheme="urn:uuid:58a6f841-87b3-4a3e-92fd-a8ffeff98427"
+                                            value="244461503^^^&amp;1.3.6.1.4.1.21367.3000.1.6&amp;ISO">
+                            <Name>
+                                <LocalizedString value="XDSDocumentEntry.patientId"/>
+                            </Name>
+                        </ExternalIdentifier>
+                        <ExternalIdentifier id="c73777f2-ab36-4661-a096-16e133fe56c5"
+                                            identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab"
+                                            value="dd558620-fb95-48ec-85e7-5ae990dc3575">
+                            <Name>
+                                <LocalizedString value="XDSDocumentEntry.uniqueId"/>
+                            </Name>
+                        </ExternalIdentifier>
+                        <ContentVersionInfo/>
+                    </ExtrinsicObject>
+                    <ExtrinsicObject id="Doc1" objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1"
+                                     mimeType="text/plain">
+                        <Slot name="creationTime">
+                            <ValueList>
+                                <Value>20130925</Value>
+                            </ValueList>
+                        </Slot>
+                        <Slot name="languageCode">
+                            <ValueList>
+                                <Value>en-us</Value>
+                            </ValueList>
+                        </Slot>
+                        <Slot name="serviceStartTime">
+                            <ValueList>
+                                <Value>20130925084025</Value>
+                            </ValueList>
+                        </Slot>
+                        <Slot name="serviceStopTime">
+                            <ValueList>
+                                <Value>20130925094025</Value>
+                            </ValueList>
+                        </Slot>
+                        <Slot name="sourcePatientId">
+                            <ValueList>
+                                <Value>244461503^^^&amp;1.3.6.1.4.1.21367.3000.1.6&amp;ISO</Value>
+                            </ValueList>
+                        </Slot>
+                        <Slot name="sourcePatientInfo">
+                            <ValueList>
+                                <Value>PID-3|pid1^^^domain</Value>
+                                <Value>PID-5|Doe^John^^^</Value>
+                                <Value>PID-7|19560527</Value>
+                                <Value>PID-8|M</Value>
+                                <Value>PID-11|100 Main St^^Metropolis^Il^44130^USA</Value>
+                            </ValueList>
+                        </Slot>
+                        <Name>
+                            <LocalizedString value="Discharge Summary"/>
+                        </Name>
+                        <Description/>
+                        <Classification id="7913e30e-7f2e-4882-9728-b0c52af0c176"
+                                        classificationScheme="urn:uuid:93606bcf-9494-43ec-9b4e-a7748d1a838d"
+                                        classifiedObject="Doc1" nodeRepresentation="">
+                            <Slot name="authorPerson">
+                                <ValueList>
+                                    <Value>^Smitty^Gerald^^^Dr^MD</Value>
+                                </ValueList>
+                            </Slot>
+                            <Slot name="authorInstitution">
+                                <ValueList>
+                                    <Value>Cleveland Clinic</Value>
+                                    <Value>Parma Community</Value>
+                                </ValueList>
+                            </Slot>
+                            <Slot name="authorRole">
+                                <ValueList>
+                                    <Value>Attending</Value>
+                                </ValueList>
+                            </Slot>
+                            <Slot name="authorSpecialty">
+                                <ValueList>
+                                    <Value>Orthopedic</Value>
+                                </ValueList>
+                            </Slot>
+                        </Classification>
+                        <Classification id="d8f63aab-ad2c-424a-8b5a-3d71f91ac5e9"
+                                        classificationScheme="urn:uuid:93606bcf-9494-43ec-9b4e-a7748d1a838d"
+                                        classifiedObject="Doc1" nodeRepresentation="">
+                            <Slot name="authorPerson">
+                                <ValueList>
+                                    <Value>^Dopplemeyer^Sherry^^^Dr^MD</Value>
+                                </ValueList>
+                            </Slot>
+                            <Slot name="authorInstitution">
+                                <ValueList>
+                                    <Value>Cleveland Clinic</Value>
+                                    <Value>Berea Community</Value>
+                                </ValueList>
+                            </Slot>
+                            <Slot name="authorRole">
+                                <ValueList>
+                                    <Value>Primary Surgon</Value>
+                                </ValueList>
+                            </Slot>
+                            <Slot name="authorSpecialty">
+                                <ValueList>
+                                    <Value>Orthopedic</Value>
+                                </ValueList>
+                            </Slot>
+                        </Classification>
+                        <Classification id="e0064810-1367-4c08-b370-89d906b34d2b"
+                                        classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a"
+                                        classifiedObject="Doc1" nodeRepresentation="Discharge summarization">
+                            <Slot name="codingScheme">
+                                <ValueList>
+                                    <Value>Connect-a-thon formatCodesclassCodes</Value>
+                                </ValueList>
+                            </Slot>
+                            <Name>
+                                <LocalizedString value="Discharge summarization"/>
+                            </Name>
+                        </Classification>
+                        <Classification id="48aec9d7-e581-4dd7-8895-6ad59fc54e39"
+                                        classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
+                                        classifiedObject="Doc1" nodeRepresentation="1.3.6.1.4.1.21367.2006.7.101">
+                            <Slot name="codingScheme">
+                                <ValueList>
+                                    <Value>Connect-a-thon formatCodesconfidentialityCodes</Value>
+                                </ValueList>
+                            </Slot>
+                            <Name>
+                                <LocalizedString value="Clinical-Staff"/>
+                            </Name>
+                        </Classification>
+                        <Classification id="140c4774-de23-49a5-94a6-3f7643b29d9b"
+                                        classificationScheme="urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d"
+                                        classifiedObject="Doc1" nodeRepresentation="CDAR2/IHE 1.0">
+                            <Slot name="codingScheme">
+                                <ValueList>
+                                    <Value>Connect-a-thon formatCodesformatCodes</Value>
+                                </ValueList>
+                            </Slot>
+                            <Name>
+                                <LocalizedString value="CDAR2/IHE 1.0"/>
+                            </Name>
+                        </Classification>
+                        <Classification id="e9dd8d5a-e19c-47fc-ae48-e2cce230405b"
+                                        classificationScheme="urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1"
+                                        classifiedObject="Doc1" nodeRepresentation="Hospital Setting">
+                            <Slot name="codingScheme">
+                                <ValueList>
+                                    <Value>Connect-a-thon formatCodeshealthCareFacilityTypeCodes</Value>
+                                </ValueList>
+                            </Slot>
+                            <Name>
+                                <LocalizedString value="Hospital Setting"/>
+                            </Name>
+                        </Classification>
+                        <Classification id="28e7e54d-e484-4008-af53-b07f81e7fb70"
+                                        classificationScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead"
+                                        classifiedObject="Doc1" nodeRepresentation="General Surgery">
+                            <Slot name="codingScheme">
+                                <ValueList>
+                                    <Value>Connect-a-thon formatCodespracticeSettingCodes</Value>
+                                </ValueList>
+                            </Slot>
+                            <Name>
+                                <LocalizedString value="General Surgery"/>
+                            </Name>
+                        </Classification>
+                        <Classification id="5d1d1423-c647-40b8-9dab-c27a98203ab6"
+                                        classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983"
+                                        classifiedObject="Doc1" nodeRepresentation="34105-7">
+                            <Slot name="codingScheme">
+                                <ValueList>
+                                    <Value>Connect-a-thon formatCodestypeCodes</Value>
+                                </ValueList>
+                            </Slot>
+                            <Name>
+                                <LocalizedString value="Hospital Discharge Summarization Note"/>
+                            </Name>
+                        </Classification>
+                        <ExternalIdentifier id="a328b933-81bf-45b0-940c-d7488ed59497"
+                                            identificationScheme="urn:uuid:58a6f841-87b3-4a3e-92fd-a8ffeff98427"
+                                            value="244461503^^^&amp;1.3.6.1.4.1.21367.3000.1.6&amp;ISO">
+                            <Name>
+                                <LocalizedString value="XDSDocumentEntry.patientId"/>
+                            </Name>
+                        </ExternalIdentifier>
+                        <ExternalIdentifier id="3b486a06-86b2-4563-b3ec-a183dd2aeaae"
+                                            identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab"
+                                            value="6e8af569-16cf-47af-802b-4d3470ccb11e">
+                            <Name>
+                                <LocalizedString value="XDSDocumentEntry.uniqueId"/>
+                            </Name>
+                        </ExternalIdentifier>
+                        <ContentVersionInfo/>
+                    </ExtrinsicObject>
+                    <RegistryPackage id="SubmissionSet03">
+                        <Slot name="submissionTime">
+                            <ValueList>
+                                <Value>20130925</Value>
+                            </ValueList>
+                        </Slot>
+                        <Name>
+                            <LocalizedString value="Lab + Discharge"/>
+                        </Name>
+                        <Description>
+                            <LocalizedString value="Post-Op Lab + Discharge"/>
+                        </Description>
+                        <Classification id="2aa6f2e5-559b-47cc-aa7e-3bfbb2e74097"
+                                        classificationScheme="urn:uuid:a7058bb9-b4e4-4307-ba5b-e3f0ab85e12d"
+                                        classifiedObject="SubmissionSet03" nodeRepresentation="">
+                            <Slot name="authorPerson">
+                                <ValueList>
+                                    <Value>^Dopplemeyer^Sherry^^^Dr^MD</Value>
+                                </ValueList>
+                            </Slot>
+                            <Slot name="authorInstitution">
+                                <ValueList>
+                                    <Value>Cleveland Clinic</Value>
+                                    <Value>Berea Community</Value>
+                                </ValueList>
+                            </Slot>
+                            <Slot name="authorRole">
+                                <ValueList>
+                                    <Value>Primary Surgon</Value>
+                                </ValueList>
+                            </Slot>
+                            <Slot name="authorSpecialty">
+                                <ValueList>
+                                    <Value>Orthopedic</Value>
+                                </ValueList>
+                            </Slot>
+                        </Classification>
+                        <Classification id="d07e3d47-1e54-44c0-90d3-c5eef79ceb51"
+                                        classificationScheme="urn:uuid:aa543740-bdda-424e-8c96-df4873be8500"
+                                        classifiedObject="SubmissionSet03" nodeRepresentation="Discharge summarization">
+                            <Slot name="codingScheme">
+                                <ValueList>
+                                    <Value>Connect-a-thon contentTypeCodes</Value>
+                                </ValueList>
+                            </Slot>
+                            <Name>
+                                <LocalizedString value="Discharge summarization"/>
+                            </Name>
+                        </Classification>
+                        <ExternalIdentifier id="thisuniqueId" registryObject="SubmissionSet03"
+                                            identificationScheme="urn:uuid:96fdda7c-d067-4183-912e-bf5ee74998a8"
+                                            value="ec193e89-f0e7-4c5b-9595-5ed292b9029f">
+                            <Name>
+                                <LocalizedString value="XDSSubmissionSet.uniqueId"/>
+                            </Name>
+                        </ExternalIdentifier>
+                        <ExternalIdentifier id="thissourceId" registryObject="SubmissionSet03"
+                                            identificationScheme="urn:uuid:554ac39e-e3fe-47fe-b233-965d2a147832"
+                                            value="b634ea2a-a8dc-4cf6-bbf4-3f42185ec3db">
+                            <Name>
+                                <LocalizedString value="XDSSubmissionSet.sourceId"/>
+                            </Name>
+                        </ExternalIdentifier>
+                        <ExternalIdentifier id="thispatientId" registryObject="SubmissionSet03"
+                                            identificationScheme="urn:uuid:6b5aea1a-874d-4603-a4bc-96a0a7b38446"
+                                            value="244461503^^^&amp;1.3.6.1.4.1.21367.3000.1.6&amp;ISO">
+                            <Name>
+                                <LocalizedString value="XDSSubmissionSet.patientId"/>
+                            </Name>
+                        </ExternalIdentifier>
+                    </RegistryPackage>
+                    <Classification id="c0977c17-c210-49f0-a8a9-a90f75c6dc12" classifiedObject="SubmissionSet03"
+                                    classificationNode="urn:uuid:a54d6aa5-d40d-43f9-88c5-b4633d873bdd"/>
+                    <Association id="9d0abd6a-728d-48fd-9281-ab267c9379f2" associationType="HasMember"
+                                 sourceObject="SubmissionSet03" targetObject="Doc0">
+                        <Slot name="SubmissionSetStatus">
+                            <ValueList>
+                                <Value>Original</Value>
+                            </ValueList>
+                        </Slot>
+                    </Association>
+                    <Association id="a9d01b17-a203-432e-adad-81f98898ae27" associationType="HasMember"
+                                 sourceObject="SubmissionSet03" targetObject="Doc1">
+                        <Slot name="SubmissionSetStatus">
+                            <ValueList>
+                                <Value>Original</Value>
+                            </ValueList>
+                        </Slot>
+                    </Association>
+                </RegistryObjectList>
+            </SubmitObjectsRequest>
+            <Document id="Doc0">
+                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
+            </Document>
+            <Document id="Doc1">
+                VGhlIHF1aWNrIGJyb3duIGZveCBqdW1wcyBvdmVyIHRoZSBsYXp5IGRvZy4NClRoZSBxdWljayBicm93biBmb3gganVtcHMgb3ZlciB0aGUgbGF6eSBkb2cuDQpUaGUgcXVpY2sgYnJvd24gZm94IGp1bXBzIG92ZXIgdGhlIGxhenkgZG9nLg0KVGhlIHF1aWNrIGJyb3duIGZveCBqdW1wcyBvdmVyIHRoZSBsYXp5IGRvZy4NClRoZSBxdWljayBicm93biBmb3gganVtcHMgb3ZlciB0aGUgbGF6eSBkb2cuDQpUaGUgcXVpY2sgYnJvd24gZm94IGp1bXBzIG92ZXIgdGhlIGxhenkgZG9nLg0KVGhlIHF1aWNrIGJyb3duIGZveCBqdW1wcyBvdmVyIHRoZSBsYXp5IGRvZy4NClRoZSBxdWljayBicm93biBmb3gganVtcHMgb3ZlciB0aGUgbGF6eSBkb2cuDQpUaGUgcXVpY2sgYnJvd24gZm94IGp1bXBzIG92ZXIgdGhlIGxhenkgZG9nLg0KVGhlIHF1aWNrIGJyb3duIGZveCBqdW1wcyBvdmVyIHRoZSBsYXp5IGRvZy4NClRoZSBxdWljayBicm93biBmb3gganVtcHMgb3ZlciB0aGUgbGF6eSBkb2cuDQpUaGUgcXVpY2sgYnJvd24gZm94IGp1bXBzIG92ZXIgdGhlIGxhenkgZG9nLg0KVGhlIHF1aWNrIGJyb3duIGZveCBqdW1wcyBvdmVyIHRoZSBsYXp5IGRvZy4NClRoZSBxdWljayBicm93biBmb3gganVtcHMgb3ZlciB0aGUgbGF6eSBkb2cuDQpUaGUgcXVpY2sgYnJvd24gZm94IGp1bXBzIG92ZXIgdGhlIGxhenkgZG9nLg==
+            </Document>
+        </ProvideAndRegisterDocumentSetRequest>
+
+    </s:Body>
+</s:Envelope>

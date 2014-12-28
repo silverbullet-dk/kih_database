@@ -1,0 +1,40 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:kron="http://kroniker.service.kihdb.silverbullet.dk/" xmlns:urn="urn:oio:medcom:chronic-dataset:1.0.0" xmlns:ns="http://rep.oio.dk/medcom.dk/xml/schemas/2011/06/20/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <kron:UploadChronicDataset>
+            <!--Optional:-->
+            <urn:UploadChronicDatasetRequestMessage>
+                <ns:MedComKD>
+                    <ns:Borger>
+                        <ns:CPR>2512484916</ns:CPR>
+                        <ns:Fornavn>Nancy</ns:Fornavn>
+                        <ns:Efternavn>Berggren</ns:Efternavn>
+                        <ns:FoedselsDato>1948-12-25</ns:FoedselsDato>
+                        <ns:Koen>K</ns:Koen>
+                        <ns:Vej>Skovvejen 12</ns:Vej>
+                        <ns:Postnummer>8010</ns:Postnummer>
+                        <ns:By>Aarhus N</ns:By>
+                        <ns:Kontakttelefon>86121824</ns:Kontakttelefon>
+                        <ns:eMail>nb@meail.dk</ns:eMail>
+                    </ns:Borger>
+                    <ns:MonitoreringOgMaal>
+                        <ns:MRC>
+                            <ns:ID>e6aced22-6de0-11e1-b0c4-0800200c9a66</ns:ID>
+                            <ns:Dato>2010-11-28T12:33:00</ns:Dato>
+                            <ns:AnalyseID>6543221</ns:AnalyseID>
+                            <ns:IUPAC>MCS88021</ns:IUPAC>
+                            <ns:Analyse>MRC Aandenoed</ns:Analyse>
+                            <ns:Resultat>3</ns:Resultat>
+                            <ns:Enhed>Uspecificeret</ns:Enhed>
+                            <ns:Min>1</ns:Min>
+                            <ns:Max>5</ns:Max>
+                            <ns:Abnorm>Abnorm</ns:Abnorm>
+                            <ns:PatientensMaal>2</ns:PatientensMaal>
+                            <ns:UdfoertAf>Laegehuset, Birte Hvam</ns:UdfoertAf>
+                        </ns:MRC>
+                    </ns:MonitoreringOgMaal>
+                </ns:MedComKD>
+            </urn:UploadChronicDatasetRequestMessage>
+        </kron:UploadChronicDataset>
+    </soapenv:Body>
+</soapenv:Envelope>

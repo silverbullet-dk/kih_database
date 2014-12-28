@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+  elementFormDefault="qualified"
+  xmlns:hsuid="http://www.nsi.dk/hsuid/2012/03/hsuid-1.0.xsd"
+  targetNamespace="http://www.nsi.dk/hsuid/2012/03/hsuid-1.0.xsd">
+  <xs:element name="Issuer" type="xs:NCName"/>
+  <xs:element name="AttributeValue" type="xs:string"/>
+  <xs:element name="Attribute">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="hsuid:AttributeValue"/>
+      </xs:sequence>
+      <xs:attribute name="Name" use="required">
+        <xs:simpleType>
+		<xs:restriction base="xs:NMTOKEN">
+				<xs:enumeration value="medcom:UserCivilRegistrationNumber"/>
+				<xs:enumeration value="medcom:UserAuthorizationCode"/>
+				<xs:enumeration value="medcom:CareProviderID"/>
+				<xs:enumeration value="hsuid:ConsentOverride"/>
+				<xs:enumeration value="hsuid:OnBehalfOfUserCivilRegistrationNumber"/>
+				<xs:enumeration value="hsuid:OnBehalfOfUserAuthorizationCode"/>
+        </xs:restriction>
+		</xs:simpleType>
+	  </xs:attribute>
+	  <xs:attribute name="NameFormat" type="hsuid:SubjectIdentifierType"/>
+	</xs:complexType>
+  </xs:element>
+	<xs:simpleType name="SubjectIdentifierType">
+		<xs:restriction base="xs:anyURI">
+			<xs:enumeration value="medcom:cprnumber"/>
+			<xs:enumeration value="hsuid:sorcode"/>
+		</xs:restriction>
+	</xs:simpleType>
+  <xs:element name="AttributeStatement">
+	  <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="hsuid:Attribute" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="id" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:NCName">
+					<xs:enumeration value="HSUIDdata"/>
+				</xs:restriction>
+			</xs:simpleType>
+        </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+	<xs:element name="Assertion" type="hsuid:AssertionType"/>
+    <xs:complexType name="AssertionType">
+        <xs:sequence>
+            <xs:element ref="hsuid:Issuer"/>
+            <xs:element ref="hsuid:AttributeStatement" maxOccurs="1"/>
+        </xs:sequence>
+        <xs:attribute name="IssueInstant" type="xs:dateTime" use="required"/>
+        <xs:attribute name="Version" type="xs:decimal" use="required"/>
+        <xs:attribute name="id" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:NCName">
+					<xs:enumeration value="HSUID"/>
+				</xs:restriction>
+			</xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+  <xs:element name="Header">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="hsuid:Assertion"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+ </xs:schema>

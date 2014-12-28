@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions name="VirtuelLaboratoriebankService" targetNamespace="http://laboratoriemedicinbank.dsdn.dk" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://laboratoriemedicinbank.dsdn.dk" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+    <wsdl:types>
+            <xs:schema elementFormDefault="qualified" targetNamespace="http://laboratoriemedicinbank.dsdn.dk" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://laboratoriemedicinbank.dsdn.dk">
+                <xs:element name="GemAnalysesvar">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element minOccurs="0" name="analysesvar" nillable="true" type="xs:string"/>
+                            <xs:element minOccurs="0" name="login" nillable="true" type="xs:string"/>
+                            <xs:element minOccurs="0" name="password" nillable="true" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="GemAnalysesvarResponse">
+                    <xs:complexType>
+                        <xs:sequence/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:schema>
+
+    </wsdl:types>
+    <wsdl:message name="IVirtuelLaboratoriebankService_GemAnalysesvar_InputMessage">
+        <wsdl:part name="parameters" element="tns:GemAnalysesvar"/>
+    </wsdl:message>
+    <wsdl:message name="IVirtuelLaboratoriebankService_GemAnalysesvar_OutputMessage">
+        <wsdl:part name="parameters" element="tns:GemAnalysesvarResponse"/>
+    </wsdl:message>
+    <wsdl:portType name="IVirtuelLaboratoriebankService">
+        <wsdl:operation name="GemAnalysesvar">
+            <wsdl:input wsaw:Action="http://laboratoriemedicinbank.dsdn.dk/IVirtuelLaboratoriebankService/GemAnalysesvar" message="tns:IVirtuelLaboratoriebankService_GemAnalysesvar_InputMessage"/>
+            <wsdl:output wsaw:Action="http://laboratoriemedicinbank.dsdn.dk/IVirtuelLaboratoriebankService/GemAnalysesvarResponse" message="tns:IVirtuelLaboratoriebankService_GemAnalysesvar_OutputMessage"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="BasicHttpBinding_IVirtuelLaboratoriebankService" type="tns:IVirtuelLaboratoriebankService">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="GemAnalysesvar">
+            <soap:operation soapAction="http://laboratoriemedicinbank.dsdn.dk/IVirtuelLaboratoriebankService/GemAnalysesvar" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="VirtuelLaboratoriebankService">
+        <wsdl:port name="BasicHttpBinding_IVirtuelLaboratoriebankService" binding="tns:BasicHttpBinding_IVirtuelLaboratoriebankService">
+            <soap:address location="http://localhost:3273/VirtuelLaboratoriebankService.svc"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

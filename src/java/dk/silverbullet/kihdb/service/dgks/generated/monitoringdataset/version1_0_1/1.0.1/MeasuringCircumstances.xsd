@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified"
+           xmlns:mc100="urn:oio:medcom:chronicdataset:1.0.0"
+           targetNamespace="urn:oio:medcom:chronicdataset:1.0.1">
+
+    <xs:import namespace="urn:oio:medcom:chronicdataset:1.0.0" schemaLocation="../1.0.0/1.0.0.xsd"/>
+
+    <xs:element name="MeasuringCircumstances" type="mc100:FormattedTextType"/>
+</xs:schema>
